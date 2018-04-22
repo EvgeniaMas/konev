@@ -14,9 +14,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="logo.png" />
     <!-- Style -->
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-    <!-- Responsive CSS -->
-   <!--  <link href="css/responsive.css" rel="stylesheet"> -->
+    <link href="css/animate.css" rel="stylesheet">    
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -29,39 +27,31 @@
 <div class="wrapper">
 <img class="project_author" src="images/Nikita.png" alt="Никита Конев">
 <header>      
- <div class="container header">              
-      
+ <div class="container header">
         <img class="logo" src="images/logo.png" alt="Логотип">
         <span class="fond_title">Фонд Никиты Конева</span>
           <div class="header__offer">                  
             <h1 class="offer">Инвестирую в ваш проект
                 <span class="offer_sum">$1 000 000</span>на лучших условиях
-                </h1>                
-       <!--  </div> -->
+            </h1> 
+        </div>
     </div>
- </div>
 </header>
-
 <div class="container">
-   
        <div class="main_content"> 
-        <a href="#form" class="get_offer"><img class="icon_ball" src="images/ball.png" alt="Иконка">Подать заявку</a>                
-            <video id="video" width="400" height="300" controls="controls">
-              <source src="invest.mp4" type="video/mp4">
-              <!-- <source src="video.webm" type="video/webm">
-              <source src="split.ogg" type="video/ogg">        -->     
-            </video>
+        <a href="#form" class="get_offer"><img class="icon_ball" src="images/ball.png" alt="Иконка">Подать заявку</a> 
             <div class="video_block">
+                <video id="video" controls="controls">
+                  <source src="invest.mp4" type="video/mp4">
+                  <!-- <source src="video.webm" type="video/webm">
+                  <source src="split.ogg" type="video/ogg">        -->     
+                </video>
                 <div class="video_block__content">
-                   <input id="turnOn_video"/>
+                   <button id="turnOn_video"></button>
                     <p class="video_block__title">Как получить инвестиции?</p>
                 </div>
             </div>
-
-
-
-
-            <div class="content_block white wow slideInLeft" data-wow-duration="2s">
+            <div class="content_block out_white wow slideInLeft" data-wow-duration="2s">
                 <div class="out_text title">                      
                     <p class="out_interest_black wow pulse"  data-wow-iteration="2" data-wow-duration="3000ms">Мне <span class="red">не</span> интересны:</p>
                 </div> 
@@ -73,7 +63,7 @@
                <div class="cross wow rollIn " data-wow-duration="2s" data-wow-delay="3s" data-wow-iteration="1">
                     <div class="x"></div>
                 </div>                       
-               <!-- <img class="out_of_icon" src="images/icone.svg" alt="Иконка"> -->
+             
                <p class="out_interest_white">ICO</p>
                
             </div>
@@ -85,11 +75,11 @@
                 <div class="cross wow rollIn " data-wow-duration="2s" data-wow-delay="3s" data-wow-iteration="1" >
                     <div class="x"></div>
                 </div>                       
-                <!-- <img class="out_of_icon" src="images/icons2.png" alt="Иконка"> -->
+               
                 <p class="out_interest_white">Тендеры</p> 
             </div>
         </div>
-            <div class="content_block">               
+            <div class="content_block empty">               
             </div>
 
             <div class="content_block black_hell wow slideInRight" data-wow-duration="2s">
@@ -112,19 +102,14 @@
                 </div>  
                 <p class="out_interest_white">Пополнение оборотных средств</p> 
             </div>
-        </div>
-        
-
-
-
-  
+        </div>        
             <div class="content_block green wow slideInLeft" data-wow-duration="2s">
                 <div class="acceptable_text title">                      
                    <p class="criterion wow pulse"  data-wow-iteration="2" data-wow-duration="3000ms">Критерии подходящего проекта:</p>
                 </div> 
             </div>
-            <div class="content_block wow slideInRight" data-wow-duration="1s">
-            <div class="acceptable_text block block1">               
+            <div class="content_block block1 white wow slideInRight" data-wow-duration="1s">
+            <div class="acceptable_text  ">               
                 <img class="acceptable_icon wow tada" data-wow-duration="3s" data-wow-delay="2s" data-wow-iteration="2" src="images/mark.png" alt="Галочка">
                 <p class="acceptable_text description">Вы помогаете людям 
                         сэкономить время и деньги 
@@ -134,42 +119,38 @@
             </div>
 
        
-            <div class="content_block  wow slideInRight" data-wow-duration="1s">
-            <div class="acceptable_text block  block2">
+            <div class="content_block white block2 wow slideInRight" data-wow-duration="1s">
+            <div class="acceptable_text">
                 <img class="acceptable_icon wow tada" data-wow-duration="3s" data-wow-delay="2s" data-wow-iteration="2" src="images/mark.png" alt="Галочка">
                 <p class="acceptable_text description">Вы проанализировали 
                         конкурентов и уверены, 
                         что ваша идея эффективнее 
                         самых популярных решений</p> 
-               <!--  <img class="back_icon" src="images/icon2.png" alt="Иконка"> -->               
+                             
                </div>    
         </div>            
    
 
     
 
-            <div class="content_block wow slideInLeft" data-wow-duration="1s">
-            <div class="acceptable_text block block3">
+            <div class="content_block block3 white wow slideInLeft" data-wow-duration="1s">
+            <div class="acceptable_text  ">
                 <img class="acceptable_icon wow tada" data-wow-duration="3s" data-wow-delay="2s" data-wow-iteration="2" src="images/mark.png" alt="Галочка">
                 <p class="acceptable_text description">Есть рабочий продукт и 
                         реальные клиенты, жизнь 
                         которых вы облегчили</p> 
-                 <!--  <img class="back_icon" src="images/icon3.png" alt="Иконка"> -->                     
+                                     
             </div>
            </div>
-            <div class="content_block  wow slideInRight" data-wow-duration="1s">
-            <div class="acceptable_text block  block4">
+            <div class="content_block block4 white wow slideInRight" data-wow-duration="1s">
+            <div class="acceptable_text ">
                 <img class="acceptable_icon wow tada" data-wow-duration="3s" data-wow-delay="2s" data-wow-iteration="2" src="images/mark.png" alt="Галочка">
                 <p class="acceptable_text description">У вас сформирована команда профессионалов в своей области</p> 
-            <!--     <img class="back_icon" src="images/icon4.png" alt="Иконка"> -->               
+            
             </div>   
         </div> 
         <div class="clearfix"></div>
-                    <!-- <div class="col-md-4 content_block ">
-                <div class="out_text title">                      
                    
-                </div> 
-            </div>      -->      
     
 </div>
 
@@ -177,11 +158,11 @@
     <div class="container">
     <h2 class="form_title">Расскажите о своем проекте</h2>
      <div class="form_container">               
-     <form id="msform">    
+     <form id="msform" action="mail.php" method="POST" enctype="multipart/form-data"  >    
     <fieldset>
         <h3 class="fs-title">Ёмко опишите Ваш стартап</h3> 
         <div class="first_part">
-        <textarea name="text" name="message" placeholder="Что за продукт? Какую проблему решает? В чем его конкурентные преимущества?" required="required"></textarea>
+        <textarea name="text" name="startup" placeholder="Что за продукт? Какую проблему решает? В чем его конкурентные преимущества?"></textarea>
         </div>
         <div class="second_part"> 
         <h3 class="fs-title">У вас есть сайт/мобильное приложение?</h3>
@@ -194,43 +175,43 @@
          
           <div class="file-upload">
             <label>
-          <input type="file" name="file">
+          <input type="file" name="presentation">
           <span><img class="upload_icon" src="images/upload_icon.png" alt="Загрузка">Презентация</span>
             </label>
 
         </div>
         <div class="file-upload">
             <label>
-          <input type="file" name="file">
+          <input type="file" name="plan">
           <span><img class="upload_icon" src="images/upload_icon.png" alt="Загрузка"> Бизнес-план</span>
             </label>
         </div>
          </div>
-        <!-- <input type="button" name="next" class="next action-button" value="Далее" /> -->
+      
         <button class="next action-button"> Далее<img class="button_icon" src="images/button_arrow.png" alt="Иконка"></button>
 
     </fieldset>
     <fieldset>        
         <h3 class="fs-title">Сколько вам нужно денег? На что они пойдут?</h3>
-        <textarea name="text" name="message" placeholder="Четко, без общих фраз типо: на 'маркетинг' или 'масштабирование'" required="required"></textarea>
-       <!--  <input type="button" name="previous" class="previous action-button" value="Previous" /> -->
+        <textarea name="text" name="user_budget" placeholder="Четко, без общих фраз типа: на 'маркетинг' или 'масштабирование'"></textarea>
+      
         <button class="next action-button"> Далее<img class="button_icon" src="images/button_arrow.png" alt="Иконка"></button>
     </fieldset>
     <fieldset>        
         <h3 class="fs-title">Сколько мы с вами сможем заработать?</h3>
-        <textarea name="text" name="message" placeholder="Сколько и на чем мы заработаем? Как прикинули эту сумму? Что для этого должно произойти?" required="required"></textarea>       
+        <textarea name="text" name="user_profit" placeholder="Сколько и на чем мы заработаем? Как прикинули эту сумму? Что для этого должно произойти?" ></textarea>       
         <button class="next action-button"> Далее<img class="button_icon" src="images/button_arrow.png" alt="Иконка"></button>   
     </fieldset>
     <fieldset>
        <h3 class="fs-title">Заполните контактную информацию</h3>
        <div class="user">
-        <input type="text" name="surname" placeholder="Фамилия" />
-        <input type="text" name="name" placeholder="Имя" />
-        <input type="text" name="patronimic" placeholder="Отчество" />
+        <input type="text" name="user_surname" placeholder="Фамилия" required="required"/>
+        <input type="text" name="user_name" placeholder="Имя" required="required"/>
+        <input type="text" name="user_patronymic" placeholder="Отчество" required="required"/>
     </div>
     <div class="contacts">
-        <input type="tel" name="phone" placeholder="Телефон" />
-        <input type="email" name="email" placeholder="E-mail" />        
+        <input type="tel" name="user_phone" placeholder="Телефон" required="required"/>
+        <input type="email" name="user_email" placeholder="E-mail" required="required"/>        
         
     </div>
     <button type="submit" class="next action-button"> Отправить</button>
@@ -254,14 +235,18 @@
 </div><!--end wrapper-->
 </div>
 <footer class="footer container-fluid">        
-        <div class="container">
-            <div class="col-md-12">
+        <div class="container footer_content">
+            <!-- <div class="col-md-12">
+                <div class="col-md-6 col-xs-6"> -->
                 <p class="copyright">&copy; 2018 Фонд Никиты Конева. All rights reserved. </p>
+               <!--  </div>
+                <div class="col-md-6 col-xs-6"> -->
                 <div class="social_iconsBlock">
                 <a href="https://www.facebook.com/nikita.konev.50" target="_blank" ><img class="social_icon" src="images/facebook.jpg" alt="Facebook"></a>
                 <a href="https://vk.com/x222xx22" target="_blank" ><img class="social_icon" src="images/vkontakte.jpg" alt="Вконтакте"></a>
                  <a href="https://www.instagram.com/nikitakonev1/" target="_blank" ><img class="social_icon" src="images/instagram.jpg" alt="Инстаграм"></a>
                 </div>
+            <!--  </div> -->
             </div>
         </div>
 </footer>
@@ -288,15 +273,13 @@
         return false; 
     });
 });
-
-
-$('#turnOn_video').on('click', function(){
-
-});
-
-
 </script>
-
-
+<script>
+$('#turnOn_video').on('click', function(){
+$('.video_block__content').hide('slow');
+$('#video').show('slow');
+$('#video')[0].play();
+});
+</script>
 </body>
 </html>
