@@ -18,7 +18,7 @@ $(".next").click(function(){
 	
 	//show the next fieldset
 	     
-	next_fs.show(); 
+	next_fs.show('slow'); 
 
 	//hide the current fieldset with style
 	current_fs.animate({opacity: 0}, {
@@ -28,19 +28,20 @@ $(".next").click(function(){
 			//1. scale current_fs down to 80%
 			scale = 1 - (1 - now) * 0.2;
 			//2. bring next_fs from the right(30%)
-			left = (now * 30)+"%";
+			left = (now * 90)+"%";
 			//3. increase opacity of next_fs to 1 as it moves in
 			opacity = 1 - now;
-			current_fs.css({'transform': 'scale('+scale+')'});
-			next_fs.css({'left': left, 'opacity': opacity});
+			// current_fs.css({'transform': 'scale('+scale+')'});
+			next_fs.css({'opacity': opacity});
 		}, 
-		duration: 1000, 
+		duration: 100, 
 		complete: function(){
-			current_fs.hide();
+			current_fs.hide('slow');
+
 			animating = false;
 		}, 
 		//this comes from the custom easing plugin
-		easing: 'easeInOutBack'
+		easing: 'easeInOutElastic'
 	});
 });
     
@@ -94,3 +95,11 @@ $('.video_block__content').hide('slow');
 $('#video').show('slow');
 $('#video')[0].play();
 });
+
+
+new WOW().init();
+if ($('.wow').hasClass('animated')) {
+            $(this).removeClass('animated');
+            $(this).removeAttr('style');
+            new WOW().init();
+}

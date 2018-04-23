@@ -32,9 +32,13 @@
 .project_author {
     width: 94vw;   
     position: absolute;
-    top: 0%;
-    right: -16%;
+    top: 1%;
+    right: -18%;
     z-index: 1;    
+}
+
+.project_authormobile {
+    display: none;
 }
 
 .wrapper {
@@ -46,12 +50,13 @@
     z-index: 12;  
     max-width: 1270px;
     margin:auto;
+
 }
 
 header {
     padding-top: 83px;
     position: relative;
-    z-index: 3;
+    z-index: 13;
 
 }
 
@@ -65,6 +70,7 @@ float: left;
 width: 97px;
 margin-right: 17px;
 
+
 }
 .fond_title {
     text-transform: uppercase;
@@ -76,6 +82,9 @@ margin-right: 17px;
     display: inline-block;
     padding-top: 7px;
 }
+
+
+
 .offer {
   font-size: 40px;
   font-family: "IBM Plex Sans Light";
@@ -97,6 +106,19 @@ margin-right: 17px;
   letter-spacing: 4px;
 }
 
+@media screen and (max-width : 768px){
+.offer_sum {
+  font-size: 60px;
+}
+.offer {
+  font-size: 30px; 
+  line-height: 30px; 
+}
+}
+
+
+
+
 .get_offer {
   background-image: -moz-linear-gradient( 42deg, rgb(36,195,159) 0%, rgb(53,214,178) 100%);
   background-image: -webkit-linear-gradient( 42deg, rgb(36,195,159) 0%, rgb(53,214,178) 100%);
@@ -116,12 +138,17 @@ margin-right: 17px;
   display: block;
   text-decoration: none;
   margin-top: 80px; 
+  letter-spacing: 1.5px;
+  /*transition-property: all;
+  transition: .4s;*/
   
   }
 .get_offer:hover{
  
  background-image: none;
  background-color:rgba(80, 227, 194);
+ box-shadow: 0 0 0 2px rgba(80, 227, 194, 0.8);
+ 
 }
 .icon_ball {
     display: inline-block;
@@ -134,7 +161,8 @@ margin-right: 17px;
   min-height: 1800px;
   height: 100%;
   position: relative;
-  z-index: 3;
+  z-index: 4;
+  
   
 }
 .content_block
@@ -200,6 +228,20 @@ opacity: 0.71;
 }
 
 
+
+
+/*.overlay {
+  position: absolute; 
+  top: 0;
+  height: 100%;
+  width: 100vw;
+  background:#050b0e;
+  opacity:0.65;
+  z-index: 222222222222;
+  }
+*/
+
+
     </style>
     <!-- Style -->
     <link href="css/style.css" rel="stylesheet">
@@ -212,9 +254,14 @@ opacity: 0.71;
 	<![endif]-->
    
 </head>
+
 <body>
+ 
 <div class="wrapper">
+
 <img class="project_author" src="images/Nikita.png" alt="Никита Конев">
+<img class="project_authormobile" src="images/Konev.png" alt="Никита Конев">
+
 <header>      
  <div class="container header">
         <img class="logo" src="images/logo.png" alt="Логотип">
@@ -249,7 +296,7 @@ opacity: 0.71;
                <div class="out_text directions">
                           
                <object class="svg_icons wow flash" data-wow-delay="3s" data-wow-duration="1s"  data-wow-iteration="1" name="graph" type="image/svg+xml" data="images/bitcoin.svg" width="150px" height="150px"></object>
-               <div class="cross wow rollIn " data-wow-duration="2s" data-wow-delay="3s" data-wow-iteration="1">
+               <div class="cross wow rollIn " data-wow-duration="2s" data-wow-delay="2s" data-wow-iteration="1">
                     <div class="x"></div>
                 </div>                       
              
@@ -261,7 +308,7 @@ opacity: 0.71;
                <div class="out_text directions">
                
                 <object class="svg_icons wow flash" data-wow-delay="3s" data-wow-duration="1s"  data-wow-iteration="1" name="graph" type="image/svg+xml" data="images/tender.svg" width="150px" height="150px"></object> 
-                <div class="cross wow rollIn " data-wow-duration="2s" data-wow-delay="3s" data-wow-iteration="1" >
+                <div class="cross wow rollIn " data-wow-duration="2s" data-wow-delay="2s" data-wow-iteration="1" >
                     <div class="x"></div>
                 </div>                       
                
@@ -275,7 +322,7 @@ opacity: 0.71;
             <div class="out_text directions">
                
                <object class="svg_icons wow flash" data-wow-delay="3s" data-wow-duration="1s"  data-wow-iteration="1" name="graph" type="image/svg+xml" data="images/build.svg" width="140px" height="140px"></object>
-                <div class="cross wow rollIn " data-wow-duration="2s" data-wow-delay="3s" data-wow-iteration="1">
+                <div class="cross wow rollIn " data-wow-duration="2s" data-wow-delay="2s" data-wow-iteration="1">
                     <div class="x"></div>
                 </div>  
                 <p class="out_interest_white">Строительство</p>   
@@ -286,10 +333,10 @@ opacity: 0.71;
             <div class="out_text directions">
                 
                 <object class="svg_icons wow flash" data-wow-delay="3s" data-wow-duration="1s"  data-wow-iteration="1" name="graph" type="image/svg+xml" data="images/money_box.svg" width="150px" height="150px"></object>
-                <div class="cross wow rollIn" data-wow-duration="2s" data-wow-delay="3s" data-wow-iteration="1">
+                <div class="cross wow rollIn" data-wow-duration="2s" data-wow-delay="2s" data-wow-iteration="1">
                     <div class="x"></div>
                 </div>  
-                <p class="out_interest_white">Пополнение оборотных <br>средств</p> 
+                <p class="out_interest_white">Пополнение <br>оборотных средств</p> 
             </div>
         </div>        
             <div class="content_block green wow slideInLeft" data-wow-duration="2s">
@@ -312,7 +359,7 @@ opacity: 0.71;
             <div class="acceptable_text">
                 <img class="acceptable_icon wow tada" data-wow-duration="3s" data-wow-delay="2s" data-wow-iteration="2" src="images/mark.png" alt="Галочка">
                 <p class="acceptable_text description">Вы проанализировали 
-                        конкурентов и уверены, 
+                        конкурентов и уверены,<br> 
                         что ваша идея эффективнее 
                         самых популярных решений</p> 
                              
@@ -349,27 +396,24 @@ opacity: 0.71;
     <div class="container ">
     <h2 class="form_title">Расскажите о своем проекте</h2>
      <div class="form_container">               
-     <form id="msform" action="mail.php" method="POST" enctype="multipart/form-data"  >    
+     <form id="msform" action="mail.php" method="POST" enctype="multipart/form-data">    
     <fieldset>
+      <div class="first_part">
         <h3 class="fs-title">Ёмко опишите Ваш стартап</h3> 
-        <div class="first_part">
+        
         <textarea name="text" name="startup" placeholder="Что за продукт? Какую проблему решает? В чем его конкурентные преимущества?"></textarea>
         </div>
         <div class="second_part"> 
         <h3 class="fs-title">У вас есть сайт/мобильное приложение?</h3>
-        <input type="text" name="site" placeholder="Ссылка на ваш продукт" />
-        
+        <input type="text" name="site" placeholder="Ссылка на ваш продукт" />        
         <h3 class="fs-title">Сколько человек в Вашей команде?</h3>        
          <input class="team_amount" name="team" min="1" value="1" type="number">
-
-        <h3 class="fs-title">Загрузите презентацию и бизнесплан</h3>
-         
+        <h3 class="fs-title">Загрузите презентацию и бизнесплан</h3>         
           <div class="file-upload">
             <label>
           <input type="file" name="presentation">
           <span><img class="upload_icon" src="images/upload_icon.png" alt="Загрузка">Презентация</span>
             </label>
-
         </div>
         <div class="file-upload">
             <label>
@@ -377,15 +421,12 @@ opacity: 0.71;
           <span><img class="upload_icon" src="images/upload_icon.png" alt="Загрузка"> Бизнес-план</span>
             </label>
         </div>
-         </div>
-      
+         </div>      
         <button class="next action-button"> Далее<img class="button_icon" src="images/button_arrow.png" alt="Иконка"></button>
-
     </fieldset>
     <fieldset>        
         <h3 class="fs-title">Сколько вам нужно денег? На что они пойдут?</h3>
-        <textarea name="text" name="user_budget" placeholder="Четко, без общих фраз типа: на 'маркетинг' или 'масштабирование'"></textarea>
-      
+        <textarea name="text" name="user_budget" placeholder="Четко, без общих фраз типа: на 'маркетинг' или 'масштабирование'"></textarea>      
         <button class="next action-button"> Далее<img class="button_icon" src="images/button_arrow.png" alt="Иконка"></button>
     </fieldset>
     <fieldset>        
@@ -404,20 +445,16 @@ opacity: 0.71;
         <input class="compulsory" type="tel" name="user_phone" placeholder="Телефон" required="required"/>
         <input class="compulsory" type="email" name="user_email" placeholder="E-mail" required="required"/> 
     </div>
-    <button id="send" type="submit" class="action-button"> Отправить</button>
-    
+    <button id="send" type="submit" class="action-button"> Отправить</button>    
     </fieldset>
-</form>
-
-
-
-
-<ul id="progressbar">
+    <ul id="progressbar">
         <li class="active"></li>
         <li></li>
         <li></li>
         <li></li>
-    </ul>   
+    </ul>
+</form>
+   
 </div>        
            
     
@@ -437,35 +474,25 @@ opacity: 0.71;
 
 </div><!--end wrapper-->
 </div>
+
 <footer class="footer container-fluid">        
-        <div class="container footer_content">
-            <!-- <div class="col-md-12">
-                <div class="col-md-6 col-xs-6"> -->
-                <p class="copyright">&copy; 2018 Фонд Никиты Конева. All rights reserved. </p>
-               <!--  </div>
-                <div class="col-md-6 col-xs-6"> -->
+        <div class="container footer_content">          
+                <p class="copyright">&copy; 2018 Фонд Никиты Конева. All rights reserved. </p>               
                 <div class="social_iconsBlock">
                 <a href="https://www.facebook.com/nikita.konev.50" target="_blank" ><img class="social_icon" src="images/facebook.jpg" alt="Facebook"></a>
                 <a href="https://vk.com/x222xx22" target="_blank" ><img class="social_icon" src="images/vkontakte.jpg" alt="Вконтакте"></a>
                  <a href="https://www.instagram.com/nikitakonev1/" target="_blank" ><img class="social_icon" src="images/instagram.jpg" alt="Инстаграм"></a>
-                </div>
-            <!--  </div> -->
+                </div>           
             </div>
         </div>
 </footer>
-
-
 <!-- END FOOTER -->
-
-
-
- <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script src='http://thecodeplayer.com/uploads/js/jquery.easing.min.js'></script>
-     <script src="js/index.js"></script>   
-    <script src="js/wow.min.js"></script>
-    <script>
-     new WOW().init();
-    </script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js' defer></script>
+    <script src='http://thecodeplayer.com/uploads/js/jquery.easing.min.js' defer></script>
+    
+    <script src="js/wow.min.js" defer></script>
+     <script src="js/index.js" defer></script>   
+   
    
 </body>
 </html>

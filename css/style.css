@@ -65,88 +65,67 @@
     font-weight: normal;    
 }
 
-
-
-
-.out_text.directions {
-  
-  position: relative;
-
+html {
+overflow-x: hidden;
 }
-
-
+.out_text.directions {  
+  position: relative;
+}
 .content_block.out_white {
   background-color: rgb(254, 254, 254);
   position: relative;
-  color: #000;
-  
+  color: #000;  
 }
-
 .content_block.black {
    color: #fff; 
    background-color: rgba(0, 0, 0, 0.6);
    display: flex;
 }
-
-
 .content_block.black_hell {
   background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
-  display: flex;
-  
+  display: flex;  
 }
-.out_text.directions {
- 
+.out_text.directions { 
   width: 100%;
   margin:auto;
 }
-
 .svg_icons {
   display: block;
   margin:auto;
   margin-top: 50px;
 }
-
 .out_interest_white{
    color: #fff;    
    bottom: 20px;
    text-align: center;
    font-size: 20px;
    font-family: "IBM Plex Sans Medium";  
-   
 }
-
 .out_interest_black {
   font-family: "IBM Plex Sans Light"; 
   font-size: 40px; 
-  letter-spacing: 2px;
+  letter-spacing: 1.1px;
    line-height: 1.25;
    text-align: left;
    color: #191919;
    padding-left: 15.8%;
    padding-top: 23%;
-
 }
-
 .out_interest_black span.red {
   border-bottom: 4px solid rgb(231, 84, 84);
 }
-
-
 .out_of_icon {
     display: inline-block;
     width: 100px;
     height: 97px;
-   
-}
-
+   }
 .acceptable_icon {
     width: 83px;
   height: 63px;  
   display: block;
   margin-bottom: 18%;
 }
-
 .acceptable_text .description {
   font-size: 20px;
   font-family: "IBM Plex Sans Medium";
@@ -154,10 +133,8 @@
   line-height: 1.5;
   text-align: left;
   color: #252525;  
-  margin:auto; 
-  
+  margin:auto;   
 }
-
 .back_icon {
     width: 250px;
     height: 250px;
@@ -186,7 +163,7 @@
   color: rgb(37, 37, 37);
   padding-right: 3%;
   padding-top: 5%;
-  padding-left: 3%;
+  padding-left: 4%;
   border: 1px solid #061016;
 }
 
@@ -305,34 +282,43 @@ img.social_icon {
 
 img.social_icon:hover{
 opacity: 0.8;
--webkit-transform: scale(1.5);
-   -moz-transform: scale(1.5);
-    -ms-transform: scale(1.5);
-     -o-transform: scale(1.5);
-        transform: scale(1.5);
+-webkit-transform: scale(1.4);
+   -moz-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+     -o-transform: scale(1.4);
+        transform: scale(1.4);
 }
  
 .form_container {
-    min-height: 540px;
+    /*min-height: 540px;*/
     padding-bottom: 30px; 
+    position: relative;
     
 }
 
+
+#form {
+  position: relative;
+  z-index: 23;
+}
+
+
+
 #msform {
     width: 100%;
-    margin: 50px auto;
+    margin: auto;
     text-align: center;
-    position: relative;
+    /*position: relative;*/
+   /* background-color: green;*/
     
 }
 #msform fieldset {   
     border: 0 none;
     border-radius: 3px;   
-    padding: 10px 0px;    
+    padding: 0px;    
     box-sizing: border-box;
-    width: 100%;    
-   
-    position: absolute;
+    width: 100%; 
+    position: relative;
 }
 
 #msform fieldset:not(:first-of-type) {
@@ -368,8 +354,7 @@ opacity: 0.8;
    background-image: -moz-linear-gradient( 42deg, rgb(36,195,159) 0%, rgb(53,214,178) 100%);
   background-image: -webkit-linear-gradient( 42deg, rgb(36,195,159) 0%, rgb(53,214,178) 100%);
   background-image: -ms-linear-gradient( 42deg, rgb(36,195,159) 0%, rgb(53,214,178) 100%);
-  box-shadow: 0px 19px 142px 0px rgba(0, 0, 0, 0.72);
-    
+  box-shadow: 0px 19px 142px 0px rgba(0, 0, 0, 0.72);    
     color: #fff;
     border:none;
     outline: none;
@@ -378,38 +363,28 @@ opacity: 0.8;
     font-size: 18px;
     line-height: 80px;
     cursor: pointer;
-
     margin-top: 43px;
-    float: right;
-
-
-    
-   
-
-  
+    float: right; 
 }
 textarea {
     height: 319px;
-
 }
-
 .first_part {
     width: 69%;
      float: left;
 }
-
 .second_part {
     width: 30%;
     float: right;
 }
-
 #msform .action-button:hover, #msform .action-button:focus {
-    box-shadow: 0 0 0 2px rgba(80, 227, 194, 0.8);
-    background-color: red;
+    box-shadow: 0 0 0 2px rgba(80, 227, 194, 0.8);   
+    background-image: none;
+    background-color:rgba(80, 227, 194);
 }
-
 .fs-title {
     font-size: 16px;
+    display: block;
     text-transform: none;
     color: #fff;
     margin-bottom: 10px;
@@ -417,19 +392,28 @@ textarea {
     font-family:"IBM Plex Sans Medium";
     margin-top: 0;
     margin-bottom: 13px;
+
 }
+
+
+
 
 #progressbar {    
     overflow: hidden;    
     counter-reset: step;
     max-width: 440px;   
     margin-bottom: 30px;
+    position: relative; 
+    display: inline-block;
     position: absolute;
-    bottom: 0;
+    bottom: 0%;
     left: 0;
 }
 
-
+.form_container {
+  
+  height: 100%;
+}
 
 .form_title {
   font-size: 40px;
@@ -438,11 +422,12 @@ textarea {
   font-family: "IBM Plex Sans Light";
   margin-top: 112px;
   margin-bottom: 64px;
+  letter-spacing: 1.3px;
 }
 
 #progressbar li {
     list-style-type: none;
-    color: white;
+    color: #fff;
     text-transform: uppercase;
     font-size: 9px;  
     width: 80px;
@@ -604,6 +589,17 @@ textarea {
 
 
 @media screen and (max-width : 991px){
+
+#msform .action-button {
+    width: 231px;
+    height: 70px;
+    font-size: 17px;
+    line-height: 70px;
+     float: right;
+    
+}
+
+
 .content_block.out_white,
 .content_block.green {
   width: 100%;
@@ -638,8 +634,11 @@ textarea {
 }
 
 .form_container {
-  min-height: 880px;
+  width: 90%;
+  margin:auto;
 }
+
+
 /*.footer {
   max-height: 198px;
   
@@ -655,10 +654,7 @@ textarea {
    max-width: 100%;
    margin-top: 110px;
 }
-.project_author {
-  width: 200%;
-  right: -50%;
-}
+
 
 .criterion {
     font-size: 40px;
@@ -669,7 +665,8 @@ textarea {
     padding-top: 0px;
     text-align: center;
     display: block;
-    width: 100%;
+    margin:auto;
+    width: 80%;
 }
 .out_text.title {
   width: 100%;  
@@ -693,6 +690,58 @@ textarea {
   padding-right: 15px;
   padding-left: 15px;
 }
+#progressbar li {
+  width: 50px;
+  height: 70px;
+  float: left;
+}
+
+#progressbar li:before {
+    width: 50px;
+    height: 70px;
+    line-height: 70px;    
+    font-size: 18px;
+  
+}
+
+
+}
+
+@media screen and (max-width : 768px){
+.wrapper {
+  width: 90vw;
+  position: static;
+ 
+}
+
+.main_content {
+  max-width: 100%; 
+  
+}
+
+.project_author {
+     display: none;
+}
+
+.project_authormobile {
+    width: 100vw;   
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    z-index: 1;  
+    display: block; 
+}
+
+.out_text.directions {
+  max-height: 343px;
+  
+}
+
+.content_block.white {
+  max-height: 343px;
+  
+}
+
 }
 
 @media screen and (max-width : 640px){
@@ -700,6 +749,50 @@ textarea {
   min-height: 443px;
   line-height: 20px;
 }
+
+
+#msform .action-button {
+    width: 200px;
+    height: 70px;
+    font-size: 17px;
+    line-height: 70px;
+    float: right;
+    
+}
+
+
+
+.video_block {
+    background-color: rgba(0, 0, 0, 0.302);
+    min-width: 280px;    
+    min-height: 220px;    
+
+}
+
+#turnOn_video {
+    
+    width: 50px;
+    height: 50px;
+    /*display: block;*/
+    /*margin:auto;
+    margin-top: 20px;    */
+}
+
+
+
+.video_block__title {
+    font-size: 24px;
+    width: 86%;
+    padding-left: 15px;
+}
+
+
+.video_block__content {
+  margin:auto;
+  width: 94%;
+}
+
+
 
 .content_block.black,
 .content_block.black_hell,
@@ -719,6 +812,10 @@ textarea {
 .footer_content {
   height: 443px;
   position: relative;
+  padding-left: 0;
+  padding-right:0;
+  margin:auto;
+  width: 100%;
 }
 
 img.social_icon {
@@ -733,13 +830,7 @@ text-align: center;
 padding-top: 40%;
 display: block;
 }
-.offer_sum {
-  font-size: 60px;
-}
-.offer {
-  font-size: 30px; 
-  line-height: 30px; 
-}
+
 .user, .contacts {
   display: block;
   margin-bottom: 0px;
@@ -752,13 +843,72 @@ display: block;
   max-width: 90%;
  
 }
-#msform .action-button {
+/*#msform .action-button {
     
     float: none;
-}
-/*#progressbar {
-   
-    position: relative;
-   
 }*/
+
+}
+@media screen and (max-width : 550px){
+.offer_sum {
+    font-size: 35px;
+    line-height: 35px;
+    display: block;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    letter-spacing: 3px;
+}
+.out_text.directions {
+    max-height: 250px;
+}
+.out_interest_black {    
+    font-size: 30px;
+    width: 90%;
+    
+}
+.criterion {
+    font-size: 30px;
+    width: 90%;
+}
+.form_title {
+    font-size: 30px;    
+    line-height: 30px;    
+    margin-top: 32px;
+    margin-bottom: 32px;
+    
+}
+#msform .action-button {
+    position: relative;
+   display: block;
+   width: 100%;
+   max-width: 250px;
+   margin:auto;
+   margin-bottom: 15px;
+   float: none;
+}
+
+#progressbar {
+  float: none;
+  display: block; 
+  position: relative;
+   width: 100%;
+   margin:auto;
+}
+.video_block__title {
+    font-size: 24px;
+    width: 75%;
+    padding-left: 10px;
+}
+
+.video_block {
+          
+    min-height: 180px;    
+
+}
+.acceptable_icon {
+    width: 63px;
+    height: 43px;
+    
+}
+
 }
