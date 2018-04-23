@@ -589,6 +589,34 @@ textarea {
 
 
 @media screen and (max-width : 1024px){
+.wrapper {
+  width: 90vw;
+  position: static;
+ 
+}
+
+.get_offer {
+   width: 100%;
+   margin:auto;
+   max-width: 100%;
+   margin-top: 210px;
+}
+
+
+
+.project_author {
+     display: none;
+}
+
+.project_authormobile {
+    width: 100vw;   
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    z-index: 1;  
+    display: block; 
+}
+
 
 #msform .action-button {
     width: 231px;
@@ -598,9 +626,7 @@ textarea {
      float: right;    
 }
 
-.offer {
-  margin-top: 187px;
-}
+
 
 
 .content_block.out_white,
@@ -645,12 +671,7 @@ textarea {
     margin:auto;
     
 }
-.get_offer {
-   width: 100%;
-   margin:auto;
-   max-width: 100%;
-   margin-top: 110px;
-}
+
 
 
 .criterion {
@@ -705,11 +726,7 @@ textarea {
 }
 
 @media screen and (max-width : 768px){
-.wrapper {
-  width: 90vw;
-  position: static;
- 
-}
+
 
 .offer {
   margin-top: 137px;
@@ -721,18 +738,7 @@ textarea {
   
 }
 
-.project_author {
-     display: none;
-}
 
-.project_authormobile {
-    width: 100vw;   
-    position: absolute;
-    top: 0%;
-    right: 0%;
-    z-index: 1;  
-    display: block; 
-}
 
 .out_text.directions {
   max-height: 343px;
