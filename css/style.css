@@ -588,7 +588,10 @@ textarea {
 }
 
 
-@media screen and (max-width : 1024px){
+
+
+
+@media screen and (max-width : 991px){
 
 #msform .action-button {
     width: 231px;
@@ -707,7 +710,7 @@ textarea {
 
 }
 
-@media screen and (max-width : 768px){
+@media screen and (max-width : 1024px){
 .wrapper {
   width: 90vw;
   position: static;
@@ -912,3 +915,15 @@ display: block;
 }
 
 }
+
+
+/*@media screen and (min-width : 992px) and (max-width: 1124px) {
+  
+  .out_text.directions {
+    padding-right: 0;
+    padding-left: 0;   
+    height: 765px;
+
+
+}
+}*/
