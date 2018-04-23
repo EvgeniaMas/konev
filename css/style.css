@@ -68,295 +68,11 @@
 
 
 
-
-body{
-    width: 100vw;
-    height: 100%;
-    margin-bottom: -150px;
-    min-width: 320px;
-    padding: 0px;
-    margin: 0px auto;      
-    font-size: 16px;
-    line-height: 1.5em;
-    color: #fff;
-    background-image: url(../images/noise.jpg);
-    background-position: center top;
-    background-size: cover;
-    background-repeat: no-repeat;
-   /* background-color: red;*/
-
-}
-
-.wrapper {
-  width: 80vw;
-    height: 100%;
-    padding:0;
-    margin:0;
-    position: relative;
-    z-index: 12;
-    /*background-color: green;*/
-    max-width: 1270px;
-    margin:auto;
-}
-
-header {
-    padding-top: 83px;
-    position: relative;
-    z-index: 3;
-
-}
-
-.container {
-  padding-right: 0;
-  padding-left: 0;
-}
-
-.logo  {
-float: left;
-width: 97px;
-margin-right: 17px;
-
-}
-
-
-
-.fond_title {
-    text-transform: uppercase;
-    max-width: 70px;
-    font-size: 16px;
-    font-family: 'IBM Plex Sans';
-    text-align: left;
-    line-height: 1.125;
-    display: inline-block;
-    padding-top: 7px;
-}
-
-
-
-
-.offer {
-  font-size: 40px;
-  font-family: "IBM Plex Sans Light";
-  letter-spacing: 2px;
-  color: rgb(255, 255, 255);
-  line-height: 0.45;
-  margin-top: 132px;
-}
-
-
-
-
-
-.offer_sum {
-  font-size: 80px;
-  font-family: "IBM Plex Sans Bold";
-  color: rgb(80, 227, 194);
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 80px;
-  display: block; 
-  padding-top: 25px;
-  padding-bottom: 27px;  
-  letter-spacing: 4px;
-}
-
-
-
-
-
-.get_offer {
-  background-image: -moz-linear-gradient( 42deg, rgb(36,195,159) 0%, rgb(53,214,178) 100%);
-  background-image: -webkit-linear-gradient( 42deg, rgb(36,195,159) 0%, rgb(53,214,178) 100%);
-  background-image: -ms-linear-gradient( 42deg, rgb(36,195,159) 0%, rgb(53,214,178) 100%);
-  box-shadow: 0px 19px 142px 0px rgba(0, 0, 0, 0.72);
-  font-size: 18px;
-  font-family: "IBM Plex Sans";
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  line-height: 1;
-  text-align: center; 
-  width: 33%;
-  max-width: 366px;
-  height: 79px;
-  line-height: 79px;
-  text-transform: uppercase; 
-  display: block;
-  text-decoration: none;
-  margin-top: 95px;
-  /*transition-property: background-color;
-   transition: .2s;*/
-  
-  }
-.get_offer:hover{
- 
- background-image: none;
- background-color:rgba(80, 227, 194, 0.8);
-}
-
-
-
-.icon_ball {
-    display: inline-block;
-    max-height: 29px;
-    margin-right: 21px;
-}
-
-.main_content {
-  max-width: 93%;
-  
-  min-height: 1800px;
-  height: 100%;
-  position: relative;
-  z-index: 3;
-}
-
-.content_block
- {
-  width: 33%;
-  float: left;
-}
-/*.empty_block {
-  background-color: blue;
-  height: auto;
-  width: 33%;
-  height: 192px;
- 
- 
-  display: inline-block;
-}*/
-
-
-.video_block {
-    background-color: rgba(0, 0, 0, 0.302);
-    min-width: 380px;
-    width: 66%;
-    height: 366px;
-    border: 1px solid rgb(80, 227, 194);
-    display: block;
-    margin-left: 33%;
-    display: flex;
-
-    
-    
-   
-
-    
-}
-
-
-
-
-
-.video_block__content {
-  margin:auto;
-  width: 80%;
-}
-
-
-
-.video_block__title {
-  font-size: 40px;
-  font-family: "IBM Plex Sans Light";
-  color: rgb(255, 255, 255);
-  line-height: 1.25;
-  padding-left: 46px;
-  text-align: center;
-  display: inline-block;
-  width: 70%;
-  
-
- 
-}
-
-
-
-#video {
-  display: none;
-  width: 100%; 
-  height: 356px;
-  
-}
-
-#turnOn_video
- {
-  background: url('../images/arrow.png') no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 99px;
-  height: 99px;
-  outline: none;
-  border:none;
-  transition-property: all;
-  transition: .4s;
-  display: inline-block;
-  margin:auto;
-}
-
-
-
-
-#turnOn_video:active, #turnOn_video:hover {
-opacity: 0.71;
--webkit-transform: scale(1.1);
-   -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-     -o-transform: scale(1.1);
-        transform: scale(1.1);
-}
-
-
-
-
-
-
-ul.out_of_interest > li {
-        display: inline;    
-        list-style: none;  
-         /*width: 367px;
-         height: 365px;
-            border: solid 1px #000000;
-            background-color: #fff;*/
-    }
-
-
-
-/*.out_text {
-  font-size: 40px;
-  font-family: "IBM Plex Sans";
-  color: rgb(25, 25, 25);
-  line-height: 1.25;
-  text-align: left;
-  background-color: rgb(254, 254, 254);
-  width: 367px;
-  height: 365px;  
-}*/
-
-div.flex_line {
-   /* display: flex;*/
-   height: 365px;
-   background-color: red;
-}
-
 .out_text.directions {
   
   position: relative;
 
 }
-
-
-
-/*
-.out_text,
-.acceptable_text {
- 
-   width: 33%;
-   height: 365px;  
-   display: inline;
-   
-}*/
-
-
-
 
 
 .content_block.out_white {
@@ -371,7 +87,6 @@ div.flex_line {
    background-color: rgba(0, 0, 0, 0.6);
    display: flex;
 }
-
 
 
 .content_block.black_hell {
@@ -389,9 +104,8 @@ div.flex_line {
 .svg_icons {
   display: block;
   margin:auto;
+  margin-top: 50px;
 }
-
-
 
 .out_interest_white{
    color: #fff;    
@@ -414,12 +128,9 @@ div.flex_line {
 
 }
 
-
 .out_interest_black span.red {
   border-bottom: 4px solid rgb(231, 84, 84);
 }
-
-
 
 
 .out_of_icon {
@@ -436,26 +147,16 @@ div.flex_line {
   margin-bottom: 18%;
 }
 
-
-
-
-
 .acceptable_text .description {
   font-size: 20px;
   font-family: "IBM Plex Sans Medium";
   color: rgb(37, 37, 37);
   line-height: 1.5;
   text-align: left;
-  color: #252525;
-  
-  margin:auto;
-  /*-moz-transform: matrix( 0.51063829787234,0,0,0.51059190031153,0,0);
-  -webkit-transform: matrix( 0.51063829787234,0,0,0.51059190031153,0,0);
-  -ms-transform: matrix( 0.51063829787234,0,0,0.51059190031153,0,0);*/
+  color: #252525;  
+  margin:auto; 
   
 }
-
-
 
 .back_icon {
     width: 250px;
@@ -463,25 +164,17 @@ div.flex_line {
     position: absolute;
     bottom: 0;
     right: 10px;
-    z-index: 0;
-
-
-    
+    z-index: 0;    
 }
-
-
 
 .content_block.green {
   background-image: -moz-linear-gradient( 42deg, rgb(36,195,159) 0%, rgb(53,214,178) 100%);
   background-image: -webkit-linear-gradient( 42deg, rgb(36,195,159) 0%, rgb(53,214,178) 100%);
   background-image: -ms-linear-gradient( 42deg, rgb(36,195,159) 0%, rgb(53,214,178) 100%);
-  /*box-shadow: 0px 19px 142px 0px rgba(0, 0, 0, 0.72);  */
-  /*max-width: 367px;*/
-  height: 365px;
+    height: 365px;
   
 }
-
-.contant_block.white{
+.content_block.white{
  
  background-size: cover;
  background-position: center;
@@ -491,9 +184,9 @@ div.flex_line {
   font-size: 20px;
   font-family: "IBM Plex Sans";
   color: rgb(37, 37, 37);
-  padding-right: 10%;
-  padding-top: 17%;
-  padding-left: 12%;
+  padding-right: 3%;
+  padding-top: 5%;
+  padding-left: 3%;
   border: 1px solid #061016;
 }
 
@@ -513,7 +206,6 @@ div.flex_line {
   background-image: url('../images/icon2.png');
 }
 
-
 .criterion {
   font-size: 40px;
   font-family: "IBM Plex Sans Light";
@@ -531,14 +223,11 @@ div.flex_line {
   box-shadow: 0px 19px 142px 0px rgba(0, 0, 0, 0.72);
   
 }
-
-
 .content_block {
     padding-right: 0;
     padding-left: 0;   
     height: 365px;
 }
-
 
 .cross {
     height: 100px;
@@ -546,12 +235,10 @@ div.flex_line {
     background-color: transparent;
     margin:auto;
     position: absolute;
-    top:20px;
-    
+    top:70px;    
     left:0;
     right:0;
 }
-
 
 .x {
   width: 110px;
@@ -578,25 +265,7 @@ div.flex_line {
   transform: rotate(-45deg) translate(-55px, 0);
 }
 
-.project_author {
-    width: 94vw;
-    
 
-   /* max-width: 1126px;*/
-    /*height: 2015px;*/
-    position: absolute;
-    top: 0%;
-    right: -3%;
-    z-index: 1;
-
-    
-}
-
-
-
-/*---------------------------------------
-   SECTION FOOTER              
------------------------------------------*/
 
 .footer {
     background-color: #000;
@@ -626,7 +295,6 @@ div.social_iconsBlock a {
     margin-right: -5px;
 }
 
-
 img.social_icon {
     display: inline-block;
     height: 50px;
@@ -644,17 +312,11 @@ opacity: 0.8;
         transform: scale(1.5);
 }
  
-
-
 .form_container {
     min-height: 540px;
-    padding-bottom: 30px;
-   /* padding-top: 30px;*/
+    padding-bottom: 30px; 
     
 }
-
-
-
 
 #msform {
     width: 100%;
@@ -669,14 +331,14 @@ opacity: 0.8;
     padding: 10px 0px;    
     box-sizing: border-box;
     width: 100%;    
-    /*stacking fieldsets above each other*/
+   
     position: absolute;
 }
-/*Hide all except first fieldset*/
+
 #msform fieldset:not(:first-of-type) {
     display: none;
 }
-/*inputs*/
+
 #msform input, #msform textarea {
     padding: 15px;
     border: 1px solid #ccc;
@@ -688,6 +350,7 @@ opacity: 0.8;
     color: #2C3E50;
     font-size: 14px;
     color:#989898;
+    resize: none;
 }
 
 #msform input.team_amount {
@@ -699,9 +362,6 @@ opacity: 0.8;
      text-align: left;
 }
 
-
-
-/*buttons*/
 #msform .action-button {
     width: 331px;
   height: 80px;
@@ -717,15 +377,17 @@ opacity: 0.8;
     text-transform: uppercase;
     font-size: 18px;
     line-height: 80px;
-
-    /*border: 0 none;
-    border-radius: 1px;*/
     cursor: pointer;
-    /*padding: 10px 5px;
-    margin: 10px 5px;*/
+
+    margin-top: 43px;
+    float: right;
+
+
+    
+   
+
+  
 }
-
-
 textarea {
     height: 319px;
 
@@ -741,13 +403,11 @@ textarea {
     float: right;
 }
 
-
-
 #msform .action-button:hover, #msform .action-button:focus {
     box-shadow: 0 0 0 2px rgba(80, 227, 194, 0.8);
     background-color: red;
 }
-/*headings*/
+
 .fs-title {
     font-size: 16px;
     text-transform: none;
@@ -758,51 +418,39 @@ textarea {
     margin-top: 0;
     margin-bottom: 13px;
 }
-/*.fs-subtitle {
-    font-weight: normal;
-    font-size: 13px;
-    color: #666;
-    margin-bottom: 20px;
-}*/
-/*progressbar*/
-#progressbar {
-    
-    overflow: hidden;
-    /*CSS counters to number the steps*/
+
+#progressbar {    
+    overflow: hidden;    
     counter-reset: step;
-    max-width: 440px;
-    /*margin:auto;*/
+    max-width: 440px;   
     margin-bottom: 30px;
     position: absolute;
     bottom: 0;
     left: 0;
-
-
-
 }
+
+
 
 .form_title {
   font-size: 40px;
   text-align: center;
-  line-height: 40px;
- 
+  line-height: 40px; 
   font-family: "IBM Plex Sans Light";
   margin-top: 112px;
   margin-bottom: 64px;
 }
 
-
-
 #progressbar li {
     list-style-type: none;
     color: white;
     text-transform: uppercase;
-    font-size: 9px;
-   /* width: 25%;*/
+    font-size: 9px;  
     width: 80px;
     float: left;
     position: relative;
 }
+
+
 #progressbar li:before {
     content: counter(step);
     counter-increment: step;
@@ -817,34 +465,29 @@ textarea {
     
 }
 
+#progressbar li:nth-child(1){
+  background-color: #40b69b;
+}
+
+#progressbar li:nth-child(2){
+  background-color: #308874;
+}
+#progressbar li:nth-child(3){
+  background-color: #205b4e;
+}
 
 
 
-/*progressbar connectors*/
-/*#progressbar li:after {
-    content: '';
-    width: 100%;
-    height: 2px;
-    background: white;
-    position: absolute;
-    left: -50%;
-    top: 9px;
-    z-index: -1;*/ /*put it behind the numbers*/
-/*}*/
 #progressbar li:first-child:after {
-    /*connector not needed before the first step*/
+    
     content: none; 
 }
-/*marking active/completed steps green*/
-/*The number of the step and the connector before it = green*/
+
 #progressbar li.active:before,  #progressbar li.active:after{
     background-color: rgb(80, 227, 194);
 
     color: #fff;
 }
-
-
-
 
 .file-upload {
      position: relative; /* Даем возможность делать позиционирование, внутри данного элемента */
@@ -918,8 +561,49 @@ textarea {
  
 }
 
+#letter_sent {
+  height: 508px; 
+  background-image: -moz-linear-gradient( 42deg, rgb(36,195,159) 0%, rgb(53,214,178) 100%);
+  background-image: -webkit-linear-gradient( 42deg, rgb(36,195,159) 0%, rgb(53,214,178) 100%);
+  background-image: -ms-linear-gradient( 42deg, rgb(36,195,159) 0%, rgb(53,214,178) 100%);
+  box-shadow: 0px 19px 142px 0px rgba(0, 0, 0, 0.72);
+  padding-top: 80px;
+  padding-bottom: 64px;
+  margin-bottom: 20px;
+  display: none;
+}
 
-@media screen and (max-width : 768px){
+.letter {
+  font-size: 40px;
+  font-family: "IBM Plex Sans Light";
+  letter-spacing: 2px;
+  color: rgb(255, 255, 255);
+  line-height: 42px;
+  margin-top: 35px;
+  text-align: center;
+}
+
+.letter.smaller_text {
+   font-size: 24px;
+  font-family: "IBM Plex Sans";
+  letter-spacing: 2px;
+  color: rgb(255, 255, 255);
+  line-height: 24px;
+  margin-top: 25px;
+  text-align: center;
+  width: 60%;
+  margin:auto;
+}
+
+.svg_sent {
+  text-align: center;
+   display: block;
+  margin:auto;
+
+}
+
+
+@media screen and (max-width : 991px){
 .content_block.out_white,
 .content_block.green {
   width: 100%;
@@ -938,6 +622,10 @@ textarea {
   display: none;
 }
 
+.social_iconsBlock {
+  margin-right: 38px;
+}
+
 
 .content_block.black,
 .content_block.black_hell,
@@ -952,10 +640,10 @@ textarea {
 .form_container {
   min-height: 880px;
 }
-.footer {
+/*.footer {
   max-height: 198px;
-  line-height: 20px;
-}
+  
+}*/
 .video_block {
     width: 100%;
     margin:auto;
@@ -965,10 +653,45 @@ textarea {
    width: 100%;
    margin:auto;
    max-width: 100%;
+   margin-top: 110px;
 }
 .project_author {
   width: 200%;
   right: -50%;
+}
+
+.criterion {
+    font-size: 40px;
+    font-family: "IBM Plex Sans Light";
+    color: rgb(255, 255, 255);
+    line-height: 40px;
+    padding-left: 0px;
+    padding-top: 0px;
+    text-align: center;
+    display: block;
+    width: 100%;
+}
+.out_text.title {
+  width: 100%;  
+  display: flex;
+}
+.acceptable_text.title{
+ width: 100%;  
+  display: flex;
+  
+  height: 100%;
+}
+.video_block__content {
+    margin: auto;
+    width: 95%;
+}
+.content_block.white {    
+    max-width: 100%;
+   
+}
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
 }
 }
 
@@ -976,6 +699,12 @@ textarea {
 .footer {
   min-height: 443px;
   line-height: 20px;
+}
+
+.content_block.black,
+.content_block.black_hell,
+.content_block.white {
+  width: 100%;
 }
 .social_iconsBlock {
   position: absolute;
@@ -1008,7 +737,28 @@ display: block;
   font-size: 60px;
 }
 .offer {
-  font-size: 30px;  
+  font-size: 30px; 
+  line-height: 30px; 
 }
-
+.user, .contacts {
+  display: block;
+  margin-bottom: 0px;
+  
+}
+.user input,
+.contacts input {
+  
+  width: 90%;
+  max-width: 90%;
+ 
+}
+#msform .action-button {
+    
+    float: none;
+}
+/*#progressbar {
+   
+    position: relative;
+   
+}*/
 }

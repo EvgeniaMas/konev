@@ -6,12 +6,201 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Фонд Никиты Конева</title>
     <meta content="Инвестирую 1000 000 долларов в Ваш проект" name="description">
-    <meta content="Инвестиции в проект, фонд Никиты Конева, выгодные инвестиции 1 000 000 долларов" name="keywords">   
-    <link href="css/normalize.css" rel="stylesheet">
-    <!-- Grid -->
+    <meta content="Инвестиции в проект, фонд Никиты Конева, выгодные инвестиции 1 000 000 долларов" name="keywords">
+    <link rel="shortcut icon" type="image/x-icon" href="logo.png" />   
+    <link href="css/normalize.css" rel="stylesheet">    
     <link href="css/grid.css" rel="stylesheet">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="logo.png" />
+    <style>
+    body{
+    width: 100vw;
+    height: 100%;
+    margin-bottom: -150px;
+    min-width: 320px;
+    padding: 0px;
+    margin: 0px auto;      
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #fff;
+    background-image: url(images/noise.jpg);
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+
+.project_author {
+    width: 94vw;   
+    position: absolute;
+    top: 0%;
+    right: -16%;
+    z-index: 1;    
+}
+
+.wrapper {
+  width: 80vw;
+    height: 100%;
+    padding:0;
+    margin:0;
+    position: relative;
+    z-index: 12;  
+    max-width: 1270px;
+    margin:auto;
+}
+
+header {
+    padding-top: 83px;
+    position: relative;
+    z-index: 3;
+
+}
+
+.container {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.logo  {
+float: left;
+width: 97px;
+margin-right: 17px;
+
+}
+.fond_title {
+    text-transform: uppercase;
+    max-width: 70px;
+    font-size: 16px;
+    font-family: 'IBM Plex Sans';
+    text-align: left;
+    line-height: 1.125;
+    display: inline-block;
+    padding-top: 7px;
+}
+.offer {
+  font-size: 40px;
+  font-family: "IBM Plex Sans Light";
+  letter-spacing: 2px;
+  color: rgb(255, 255, 255);
+  line-height: 0.45;
+  margin-top: 137px;
+}
+.offer_sum {
+  font-size: 80px;
+  font-family: "IBM Plex Sans Bold";
+  color: rgb(80, 227, 194);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 80px;
+  display: block; 
+  padding-top: 25px;
+  padding-bottom: 27px;  
+  letter-spacing: 4px;
+}
+
+.get_offer {
+  background-image: -moz-linear-gradient( 42deg, rgb(36,195,159) 0%, rgb(53,214,178) 100%);
+  background-image: -webkit-linear-gradient( 42deg, rgb(36,195,159) 0%, rgb(53,214,178) 100%);
+  background-image: -ms-linear-gradient( 42deg, rgb(36,195,159) 0%, rgb(53,214,178) 100%);
+  box-shadow: 0px 19px 142px 0px rgba(0, 0, 0, 0.72);
+  font-size: 18px;
+  font-family: "IBM Plex Sans";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 1;
+  text-align: center; 
+  width: 33%;
+  max-width: 366px;
+  height: 79px;
+  line-height: 79px;
+  text-transform: uppercase; 
+  display: block;
+  text-decoration: none;
+  margin-top: 80px; 
+  
+  }
+.get_offer:hover{
+ 
+ background-image: none;
+ background-color:rgba(80, 227, 194);
+}
+.icon_ball {
+    display: inline-block;
+    max-height: 29px;
+    margin-right: 21px;
+}
+
+.main_content {
+  max-width: 95%;  
+  min-height: 1800px;
+  height: 100%;
+  position: relative;
+  z-index: 3;
+  
+}
+.content_block
+ {
+  width: 33%;
+  float: left;
+}
+.video_block {
+    background-color: rgba(0, 0, 0, 0.302);
+    min-width: 380px;
+    width: 66%;
+    height: 366px;
+    border: 1px solid rgb(80, 227, 194);
+    display: block;
+    margin-left: 33%;
+    display: flex;
+
+}
+.video_block__content {
+  margin:auto;
+  width: 64%;
+}
+
+.video_block__title {
+  font-size: 40px;
+  font-family: "IBM Plex Sans Light";
+  color: rgb(255, 255, 255);
+  line-height: 1.25;
+  padding-left: 46px;
+  text-align: center;
+  display: inline-block;
+  width: 70%;
+   
+}
+#video {
+  display: none;
+  width: 100%; 
+  height: 356px;  
+}
+
+#turnOn_video
+ {
+  background: url('images/arrow.png') no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 99px;
+  height: 99px;
+  outline: none;
+  border:none;
+  transition-property: all;
+  transition: .4s;
+  display: inline-block;
+  margin:auto;
+}
+
+#turnOn_video:active, #turnOn_video:hover {
+opacity: 0.71;
+-webkit-transform: scale(1.1);
+   -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+     -o-transform: scale(1.1);
+        transform: scale(1.1);
+}
+
+
+    </style>
     <!-- Style -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">    
@@ -100,7 +289,7 @@
                 <div class="cross wow rollIn" data-wow-duration="2s" data-wow-delay="3s" data-wow-iteration="1">
                     <div class="x"></div>
                 </div>  
-                <p class="out_interest_white">Пополнение оборотных средств</p> 
+                <p class="out_interest_white">Пополнение оборотных <br>средств</p> 
             </div>
         </div>        
             <div class="content_block green wow slideInLeft" data-wow-duration="2s">
@@ -149,13 +338,15 @@
             
             </div>   
         </div> 
-        <div class="clearfix"></div>
+        <!-- <div class="clearfix"></div> -->
                    
-    
+    </div>
+
+
 </div>
 
 <section id="form">
-    <div class="container">
+    <div class="container ">
     <h2 class="form_title">Расскажите о своем проекте</h2>
      <div class="form_container">               
      <form id="msform" action="mail.php" method="POST" enctype="multipart/form-data"  >    
@@ -205,19 +396,22 @@
     <fieldset>
        <h3 class="fs-title">Заполните контактную информацию</h3>
        <div class="user">
-        <input type="text" name="user_surname" placeholder="Фамилия" required="required"/>
-        <input type="text" name="user_name" placeholder="Имя" required="required"/>
-        <input type="text" name="user_patronymic" placeholder="Отчество" required="required"/>
+        <input class="compulsory" type="text" name="user_surname" placeholder="Фамилия" required="required"/>
+        <input class="compulsory" type="text" name="user_name" placeholder="Имя" required="required"/>
+        <input class="compulsory" type="text" name="user_patronymic" placeholder="Отчество" required="required"/>
     </div>
     <div class="contacts">
-        <input type="tel" name="user_phone" placeholder="Телефон" required="required"/>
-        <input type="email" name="user_email" placeholder="E-mail" required="required"/>        
-        
+        <input class="compulsory" type="tel" name="user_phone" placeholder="Телефон" required="required"/>
+        <input class="compulsory" type="email" name="user_email" placeholder="E-mail" required="required"/> 
     </div>
-    <button type="submit" class="next action-button"> Отправить</button>
+    <button id="send" type="submit" class="action-button"> Отправить</button>
     
     </fieldset>
 </form>
+
+
+
+
 <ul id="progressbar">
         <li class="active"></li>
         <li></li>
@@ -231,6 +425,15 @@
          
 </div>
 </section>  
+
+
+<div id="letter_sent">
+       <div class="letter_sent__content">
+       <object class="svg_sent" name="graph" type="image/svg+xml" data="images/sent_icon.svg" width="150px" height="150px"></object>        
+        <h3 class="letter">Ваш запрос отправлен</h3>
+        <h4 class="letter smaller_text">Мы свяжемся с вами как только будем готовы обсудить детали и условия.</h4>
+    </div>
+</div>
 
 </div><!--end wrapper-->
 </div>
@@ -263,23 +466,6 @@
     <script>
      new WOW().init();
     </script>
-    <script>
-   $(document).ready(function(){
-    $('.get_offer').click( function(){ 
-    var scroll_el = $(this).attr('href'); 
-        if ($(scroll_el).length != 0) { 
-        $('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 2000); // 
-        }
-        return false; 
-    });
-});
-</script>
-<script>
-$('#turnOn_video').on('click', function(){
-$('.video_block__content').hide('slow');
-$('#video').show('slow');
-$('#video')[0].play();
-});
-</script>
+   
 </body>
 </html>
