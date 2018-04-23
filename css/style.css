@@ -588,18 +588,18 @@ textarea {
 }
 
 
-
-
-
-@media screen and (max-width : 991px){
+@media screen and (max-width : 1024px){
 
 #msform .action-button {
     width: 231px;
     height: 70px;
     font-size: 17px;
     line-height: 70px;
-     float: right;
-    
+     float: right;    
+}
+
+.offer {
+  margin-top: 187px;
 }
 
 
@@ -640,12 +640,6 @@ textarea {
   width: 90%;
   margin:auto;
 }
-
-
-/*.footer {
-  max-height: 198px;
-  
-}*/
 .video_block {
     width: 100%;
     margin:auto;
@@ -710,12 +704,17 @@ textarea {
 
 }
 
-@media screen and (max-width : 1024px){
+@media screen and (max-width : 768px){
 .wrapper {
   width: 90vw;
   position: static;
  
 }
+
+.offer {
+  margin-top: 137px;
+}
+
 
 .main_content {
   max-width: 100%; 
@@ -915,15 +914,3 @@ display: block;
 }
 
 }
-
-
-/*@media screen and (min-width : 992px) and (max-width: 1124px) {
-  
-  .out_text.directions {
-    padding-right: 0;
-    padding-left: 0;   
-    height: 765px;
-
-
-}
-}*/
