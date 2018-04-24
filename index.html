@@ -226,24 +226,16 @@ opacity: 0.71;
      -o-transform: scale(1.1);
         transform: scale(1.1);
 }
-
-
-
-
-
-
-
 .overlay {
   
-    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.2) repeat-y;
     bottom: 0;
     left: 0;
     position: fixed;
     display: none;
     right: 0;
     top: 0;
-    z-index: 3;
-   
+    z-index: 3;   
     height: 100%;
     width: 100%
 }
@@ -269,7 +261,7 @@ opacity: 0.71;
 <div class="wrapper">
 <div class="overlay"></div>
 <img class="project_author" src="images/Nikita.png" alt="Никита Конев">
-<img class="project_authormobile" src="images/white.png" alt="Никита Конев">
+<img class="project_authormobile" src="images/mobile.png" alt="Никита Конев">
 
 <header>      
  <div class="container header">
@@ -453,14 +445,14 @@ opacity: 0.71;
     </fieldset>
     <fieldset>
        <h3 class="fs-title">Заполните контактную информацию</h3>
-       <div class="user">
-        <input class="compulsory" type="text" name="user_surname" placeholder="Фамилия" required="required"/>
-        <input class="compulsory" type="text" name="user_name" placeholder="Имя" required="required"/>
-        <input class="compulsory" type="text" name="user_patronymic" placeholder="Отчество" required="required"/>
+       <div id="user_block">
+        <input class="compulsory  compulsory1" type="text" name="user_surname" placeholder="Фамилия" required="required"/>
+        <input class="compulsory compulsory1" type="text" name="user_name" placeholder="Имя" required="required"/>
+        <input class="compulsory compulsory1" type="text" name="user_patronymic" placeholder="Отчество" required="required"/>
     </div>
     <div class="contacts">
-        <input class="compulsory" type="tel" name="user_phone" placeholder="Телефон" required="required"/>
-        <input class="compulsory" type="email" name="user_email" placeholder="E-mail" required="required"/> 
+        <input class="compulsory compulsory2" type="tel" name="user_phone" placeholder="Телефон" required="required"/>
+        <input class="compulsory compulsory2" type="email" name="user_email" placeholder="E-mail" required="required"/> 
     </div>
     <button id="send" type="submit" class="action-button"> Отправить</button>    
     </fieldset>
