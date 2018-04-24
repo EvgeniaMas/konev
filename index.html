@@ -504,9 +504,18 @@ opacity: 0.71;
             </div>        
 </footer>
 <!-- END FOOTER -->
-<script src='js/jquery.js' ></script>
+<script src='js/jquery.js'></script>
 <script src='js/ease.js' ></script>    
 <script src='js/wow.min.js' ></script>
-<script src='js/index.js' ></script>
+<script> 
+new WOW().init();
+if ($('.wow').hasClass('animated')) {
+            $(this).removeClass('animated');
+            $(this).removeAttr('style');
+            new WOW().init();
+}
+
+</script>
+<script src='js/index.js' defer></script>
 </body>
 </html>

@@ -312,6 +312,10 @@ opacity: 0.8;
   float: left;
 }
 
+
+
+
+
 #form {
   position: relative;
   z-index: 23;
@@ -323,8 +327,7 @@ opacity: 0.8;
     width: 100%;
     margin: auto;
     text-align: center;
-    /*position: relative;*/
-   /* background-color: green;*/
+   
     
 }
 #msform fieldset {   
@@ -387,11 +390,31 @@ textarea {
 .first_part {
     width: 69%;
      float: left;
+      padding-left: 10px;
+    padding-right: 10px;
 }
 .second_part {
     width: 30%;
-    float: right;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
 }
+
+@media screen and (min-width : 1200px) and (max-width : 1300px){
+.second_part {
+  
+    width: 40%;
+    box-sizing: border-box;
+}
+.first_part {
+    
+    width: 55%;
+    box-sizing: border-box;
+}
+
+}
+
+
 #msform .action-button:hover, #msform .action-button:focus {
     box-shadow: 0 0 0 2px rgba(80, 227, 194, 0.8);   
     background-image: none;
@@ -428,6 +451,8 @@ textarea {
 .form_container {
   
   height: 100%;
+  width: 95%;
+  margin:auto;
 }
 
 .form_title {
@@ -546,20 +571,7 @@ textarea {
   margin-bottom: 29px;
   justify-content: space-between;
 }
-.user input {
-  flex: 1;
-  width: 30%;
-  max-width: 347px;
- 
 
-}
-
-.contacts input {
-  flex: 1;
-  max-width: 531px;
-  width: 45%;
- 
-}
 
 #letter_sent {
   height: 508px; 
@@ -610,12 +622,18 @@ textarea {
 }
 
 
+
+
+
 @media screen and (max-width : 1194px){
 .wrapper {
   width: 90vw;
   position: static;
  
 }
+
+
+
 
 
 .get_offer {
@@ -782,6 +800,7 @@ textarea {
 .footer {
   min-height: 443px;
   line-height: 20px;
+  
 }
 
 
@@ -828,8 +847,7 @@ textarea {
 
 
 
-.content_block.black,
-.content_block.black_hell,
+
 .content_block.white {
   width: 100%;
 }
@@ -956,6 +974,12 @@ display: block;
     
 }
 
+p.copyright{
+text-align: center;
+padding-top: 20%;
+display: block;
+}
+
 
 .acceptable_icon {
     width: 63px;
@@ -971,5 +995,33 @@ display: block;
     font-size: 15px;
     
 }
+}
+
+@media screen and (max-width: 340px){}
+.offer {
+    font-size: 29px;
+    max-width: 95%;
+}
+
+.content_block.white {
+    max-height: 353px;
+    
+    padding-bottom: 15px;
+}
+
+}
+div .user input .compulsory{
+  flex: 1;
+  width: 30%;
+  max-width: 347px;
+ 
+
+}
+
+div .contacts input .compulsory{
+  flex: 1;
+  max-width: 531px;
+  width: 45%;
+ 
 }
 

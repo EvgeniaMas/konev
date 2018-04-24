@@ -97,12 +97,7 @@ $('#video')[0].play();
 });
 
 
-new WOW().init();
-if ($('.wow').hasClass('animated')) {
-            $(this).removeClass('animated');
-            $(this).removeAttr('style');
-            new WOW().init();
-}
+
 
 
 $(document).ready( function() {
