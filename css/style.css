@@ -602,6 +602,13 @@ textarea {
 
 }
 
+@media screen and (min-width : 769px) and (max-width : 1194px) {
+
+.offer {
+  margin-top: 207px;
+}
+}
+
 
 @media screen and (max-width : 1194px){
 .wrapper {
@@ -609,6 +616,7 @@ textarea {
   position: static;
  
 }
+
 
 .get_offer {
    width: 100%;
@@ -747,7 +755,7 @@ textarea {
 
 
 .offer {
-  margin-top: 137px;
+  margin-top: 87px;
 }
 
 
@@ -869,13 +877,15 @@ display: block;
   max-width: 90%;
  
 }
-/*#msform .action-button {
-    
-    float: none;
-}*/
 
 }
+
 @media screen and (max-width : 550px){
+.offer {
+    font-size: 29px;
+    max-width: 80%;
+}
+
 .offer_sum {
     font-size: 35px;
     line-height: 35px;
@@ -928,13 +938,38 @@ display: block;
 
 .video_block {
           
-    min-height: 180px;    
+    min-height: 180px;
+    max-height: 300px;    
 
 }
+
+.out_text.directions {
+    max-height: 210px;
+}
+
+.content_block.white {
+    max-height: 323px;
+}
+
+.footer_content {
+    height: 343px;
+    
+}
+
+
 .acceptable_icon {
     width: 63px;
     height: 43px;
     
 }
-
+.logo {
+    
+    width: 88px;
+    margin-right: 12px;
 }
+.fond_title {
+    font-size: 15px;
+    
+}
+}
+
