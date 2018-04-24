@@ -249,7 +249,8 @@ overflow-x: hidden;
     min-height: 150px;
     line-height: 150px;
     border-bottom: 1px solid #fff;
-    
+    position: relative;
+    z-index: 33;
 }
 p.copyright {
     color: #fff;
@@ -296,6 +297,20 @@ opacity: 0.8;
     
 }
 
+#msform input.filename
+ {
+     background-color: transparent;
+     border: 1px solid transparent;
+     color: #fff;
+     width: 40%;
+     display: inline-block;
+     padding: 0 10px;
+    
+}
+
+#msform input.filename:first-child{
+  float: left;
+}
 
 #form {
   position: relative;
@@ -602,7 +617,9 @@ textarea {
    margin-top: 210px;
 }
 
-
+.overlay {
+  display: block;
+}
 
 .project_author {
      display: none;
@@ -615,6 +632,7 @@ textarea {
     right: 0%;
     z-index: 1;  
     display: block; 
+
 }
 
 

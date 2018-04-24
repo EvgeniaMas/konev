@@ -103,3 +103,16 @@ if ($('.wow').hasClass('animated')) {
             $(this).removeAttr('style');
             new WOW().init();
 }
+
+
+$(document).ready( function() {
+    $(".presentation input[type=file]").change(function(){
+         var filename = $(this).val().replace(/.*\\/, "");
+         $("#filename_presentation").val(filename);        
+    });
+    $(".plan input[type=file]").change(function(){
+         var filename = $(this).val().replace(/.*\\/, "");      
+         
+         $("#filename_plan").val(filename);
+    });
+});

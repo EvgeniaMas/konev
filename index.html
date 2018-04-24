@@ -233,16 +233,22 @@ opacity: 0.71;
 
 
 
-/*.overlay {
-  position: absolute; 
-  top: 0;
-  height: 100%;
-  width: 100vw;
-  background:#050b0e;
-  opacity:0.65;
-  z-index: 222222222222;
-  }
-*/
+.overlay {
+  
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.2);
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    display: none;
+    right: 0;
+    top: 0;
+    z-index: 3;
+   
+    height: 100%;
+    width: 100%
+}
+  
+
 
 
     </style>
@@ -261,9 +267,9 @@ opacity: 0.71;
 <body>
  
 <div class="wrapper">
-
+<div class="overlay"></div>
 <img class="project_author" src="images/Nikita.png" alt="Никита Конев">
-<img class="project_authormobile" src="images/Konev.png" alt="Никита Конев">
+<img class="project_authormobile" src="images/white.png" alt="Никита Конев">
 
 <header>      
  <div class="container header">
@@ -417,18 +423,21 @@ opacity: 0.71;
         <h3 class="fs-title">Сколько человек в Вашей команде?</h3>        
          <input class="team_amount" name="team" min="1" value="1" type="number">
         <h3 class="fs-title">Загрузите презентацию и бизнесплан</h3>         
-          <div class="file-upload">
+          <div class="file-upload presentation">
             <label>
           <input type="file" name="presentation">
           <span><img class="upload_icon" src="images/upload_icon.png" alt="Загрузка">Презентация</span>
             </label>
         </div>
-        <div class="file-upload">
+        
+        <div class="file-upload plan">
             <label>
           <input type="file" name="plan">
           <span><img class="upload_icon" src="images/upload_icon.png" alt="Загрузка"> Бизнес-план</span>
             </label>
         </div>
+        <input type="text" id="filename_presentation" class="filename" disabled>
+        <input type="text" id="filename_plan" class="filename" disabled>
          </div>      
         <button class="next action-button"> Далее<img class="button_icon" src="images/button_arrow.png" alt="Иконка"></button>
     </fieldset>
