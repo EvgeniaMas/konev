@@ -31,10 +31,10 @@
 .project_author {
    /* width: 100%;   */
     position: absolute;
-    top: 1%;
-    right: 3%;
+    top: 20px;
+    right: -18%;
     z-index: 1; 
-    max-width: 100%; 
+    max-width: 120%; 
 }
 
 .project_authormobile {
@@ -42,17 +42,26 @@
 }
 
 .wrapper {
-    width: 80vw;
-    max-width: 1270px;
+    width: 90vw;
+    max-width: 1100px;
     height: 100%;
     padding:0;
     margin:0;
     position: relative;
     z-index: 12; 
     margin:auto;
-   /* background-color: blue;*/
+    
 
 }
+
+.row_container{
+  max-width: 1100px;
+  margin:auto; 
+  position: relative;
+  z-index: 4;
+  
+}
+
 
 header {
     padding-top: 83px;
@@ -61,11 +70,7 @@ header {
 
 }
 
-.container {
-  /*padding-right: 0;
-  padding-left: 0;*/
-  /*max-width:60vw!important;*/
- /* background-color: green;*/
+.container { 
   margin:auto;
 }
 
@@ -141,7 +146,7 @@ margin-right: 17px;
   text-transform: uppercase; 
   display: block;
   text-decoration: none;
-  margin-top: 80px; 
+  margin-top: 90px; 
   letter-spacing: 1.5px;
   /*transition-property: all;
   transition: .4s;*/
@@ -161,10 +166,11 @@ margin-right: 17px;
 }
 
 .main_content {
-  max-width: 80%; 
-  height: 100%;
+  /*max-width: 1170px; 
+  height: 100%;*/
   position: relative;
   z-index: 4;
+  /*background-color: red;*/
    
 }
 .content_block
@@ -273,7 +279,7 @@ opacity: 0.71;
 <img class="project_authormobile" src="images/mobile.png" alt="Никита Конев">
 
 <header>      
- <div class="container header">
+ <div class="header">
         <img class="logo" src="images/logo.png" alt="Логотип">
         <span class="fond_title">Фонд Никиты Конева</span>
           <div class="header__offer">                  
@@ -283,17 +289,16 @@ opacity: 0.71;
         </div>
     </div>
 </header>
-<div class="container">
-       <div class="main_content"> 
+  <div class="row_container">       
         <a href="#form" class="get_offer"><img class="icon_ball" src="images/ball.png" alt="Иконка">Подать заявку</a> 
-            <div class="video_block">
-                
+            <div class="video_block">                
                 <div class="video_block__content">
                   <!--  <button onclick="PopUpShow()" id="turnOn_video"></button> -->
                     <p class="video_block__title">Как получить инвестиции?</p>
                 </div>
-            </div>
-           <div class="row_container">
+         </div>
+   </div>
+ <div class="row_container">
             <div class="content_block out_white wow slideInLeft" data-wow-duration="2s">
                 <div class="out_text title">                      
                     <p class="out_interest_black wow pulse"  data-wow-iteration="2" data-wow-duration="3000ms">Мне <span class="red">не</span> интересны:</p>
@@ -318,8 +323,8 @@ opacity: 0.71;
                 <p class="out_interest_white">Тендеры</p> 
             </div>
         </div>
-     </div>
-     <div class="row_container">
+ </div>
+<div class="row_container">
             <div class="content_block empty">               
             </div>
             <div class="content_block black_hell wow slideInRight" data-wow-duration="2s">
@@ -340,8 +345,8 @@ opacity: 0.71;
                 <p class="out_interest_white">Пополнение <br>оборотных средств</p> 
             </div>
         </div>  
-       </div>
-        <div class="row_container">      
+ </div>
+<div class="row_container">      
             <div class="content_block green wow slideInLeft" data-wow-duration="2s">
                    <p class="criterion wow pulse"  data-wow-iteration="2" data-wow-duration="3000ms">Критерии подходящего проекта:</p>
             </div>
@@ -361,9 +366,9 @@ opacity: 0.71;
                         конкурентов и уверены,<br> 
                         что ваша идея эффективнее 
                         самых популярных решений</p>               
-        </div> 
-    </div>
-         <div class="row_container">           
+             </div> 
+</div>
+<div class="row_container">           
         <div class="content_block block3 white wow slideInLeft" data-wow-duration="1s">           
                 <img class="acceptable_icon wow fadeIn" data-wow-duration="3s" data-wow-delay="2s" src="images/mark.png" alt="Галочка">                                  
                 <p class="acceptable_text description">Есть рабочий продукт и 
@@ -380,19 +385,18 @@ opacity: 0.71;
 </div>
 </div>
 <div class="clearfix"></div>
-<section id="form">
-    <div class="container ">
-    <h2 class="form_title">Расскажите о своём проекте</h2>
-     <div id="full_form" class="form_container">               
+<section id="form" class="row_container ">
+  
+    <h2 class="form_title">Расскажите о своём проекте</h2>                
      <form id="msform" action="mail.php" method="POST" enctype="multipart/form-data">    
-    <fieldset>
+    <fieldset class="double_section">
       <div class="first_part">
         <h3 class="fs-title">Ёмко опишите Ваш стартап</h3>
         <textarea name="startup" placeholder="Что за продукт? Какую проблему решает? В чем его конкурентные преимущества?"></textarea>
         </div>
         <div class="second_part"> 
         <h3 class="fs-title">У вас есть сайт/мобильное приложение?</h3>
-        <input type="text" name="site" placeholder="Ссылка на ваш продукт" />        
+        <input class="product" type="text" name="site" placeholder="Ссылка на ваш продукт" />        
         <h3 class="fs-title">Сколько человек в Вашей команде?</h3>        
          <input class="team_amount" name="team" min="1" value="1" type="number">
         <h3 class="fs-title">Загрузите презентацию и бизнесплан</h3>         
@@ -423,7 +427,7 @@ opacity: 0.71;
         <textarea name="user_profit" placeholder="Сколько и на чем мы заработаем? Как прикинули эту сумму? Что для этого должно произойти?" ></textarea>       
         <a class="next action-button"> Далее<img class="button_icon" src="images/button_arrow.png" alt="Иконка"></a>   
     </fieldset>
-    <fieldset>
+    <fieldset class="user_info">
        <h3 class="fs-title">Заполните контактную информацию</h3>
        <div id="user_block">
         <input class="compulsory  compulsory1" type="text" name="user_surname" placeholder="Фамилия" required="required"/>
@@ -443,8 +447,8 @@ opacity: 0.71;
         <li></li>
     </ul>
 </form>   
-</div>
-</div>
+<!-- </div> -->
+
 </section>
 <div id="letter_sent">
        <div class="letter_sent__content">

@@ -66,7 +66,7 @@ $("#send").click(function(){
         }
         else{
         	
-        $('.form_container').hide('slow');
+        $('#msform').hide('slow');
 	    $('#progressbar').hide('slow');	
          $('#letter_sent').show('slow');
 	     

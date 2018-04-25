@@ -257,7 +257,11 @@ overflow-x: hidden;
   transform: rotate(-45deg) translate(-55px, 0);
 }
 
-
+#msform {
+  width: 100%;
+  padding-bottom: 115px;
+  
+}
 
 .footer {
     background-color: #000;
@@ -358,7 +362,7 @@ opacity: 0.8;
     border-radius: 3px;   
     padding: 0px;    
     box-sizing: border-box;
-    width: 100%; 
+    min-width: 100%; 
     position: relative;
 }
 
@@ -378,6 +382,7 @@ opacity: 0.8;
     font-size: 14px;
     color:#989898;
     resize: none;
+    box-sizing: border-box;
 }
 
 #msform input.team_amount {
@@ -411,20 +416,55 @@ opacity: 0.8;
 textarea {
     height: 319px;
 }
+
+
+
 .first_part {
-    width: 65%;
-     float: left;
+    width: 65%;    
+     display: inline-block;
       padding-left: 0px;
       padding-right: 10px;
       box-sizing: border-box;
+      float: left;     
+      
+      min-height: 380px;
+      
 }
 .second_part {
-    width: 30%;
+    width: 35%;
+   
     float: left;
     padding-left: 10px;
     padding-right: 0px;
     box-sizing: border-box;
+    float: left;
+   
+    display: block;
+    min-height: 400px;
+    margin-bottom: 43px;
+
 }
+
+@media screen and (min-width : 1200px){
+  .content_block.green,
+  .content_block.white,
+  .content_block{ 
+ 
+  width: 365px;
+  height: 360px;
+  box-sizing: border-box;
+  
+  }
+
+}
+
+.file-upload {
+  display: inline-block;
+  max-width: 50%;
+  margin-right: 15px;
+  float: left;
+}
+
 
 @media screen and (min-width : 1081px){
   .content_block.green,
@@ -435,6 +475,10 @@ textarea {
   height: 365px;
   
   }
+
+  .social_iconsBlock {
+  margin-right: 0px;
+}
 
   #progressbar {
     padding-left: 0;
@@ -451,24 +495,13 @@ textarea {
     margin-left: 33%;
     
 }
+
+
+
 }
 
 
 
-
-@media screen and (min-width : 1200px) and (max-width : 1300px){
-.second_part {
-  
-    width: 50%;
-    box-sizing: border-box;
-}
-.first_part {
-    
-    width: 50%;
-    box-sizing: border-box;
-}
-
-}
 
 
 #msform .action-button:hover, #msform .action-button:focus {
@@ -496,7 +529,7 @@ textarea {
     overflow: hidden;    
     counter-reset: step;
     max-width: 440px;   
-    margin-bottom: 30px;
+    padding-bottom: 115px;
     position: relative; 
     display: inline-block;
     position: absolute;
@@ -504,10 +537,21 @@ textarea {
     left: 0;
 }
 
+
+@media screen and (max-width : 540px){
+#progressbar {    
+     
+    padding-bottom: 0px;
+    
+}
+}
+
+
+
 .form_container {
   
   height: 100%;
-  width: 95%;
+  width: 100%;
   margin:auto;
 }
 
@@ -600,8 +644,8 @@ textarea {
      position: absolute;
      top: 0;
      left: 0;
-     width: 100%;
-     height: 100%;
+     /*width: 100%;
+     height: 100%;*/
      cursor: pointer;
 
 }
@@ -704,11 +748,27 @@ textarea {
 }
 }
 
+
+
 @media screen and (max-width : 1080px){
 .wrapper {
   width: 90vw;
   position: static;
 }
+#form {
+ width: 90%; 
+ margin:auto;
+}
+
+
+#msform input.product {
+  max-width: 300px;
+  display: block;
+  text-align: left;
+
+
+}
+
 
 .video_block {
     width: 100%;
@@ -717,12 +777,11 @@ textarea {
 
 }
 
-
-
-.main_content{
-  max-width: 90%;
-  margin:auto;
+.social_iconsBlock {
+  margin-right: 38px;
 }
+
+
 
 .content_block.out_white
  {
@@ -801,7 +860,15 @@ textarea {
   padding-left: 0;
 }
 
-
+.first_part,
+.second_part {
+  width: 90%;
+  max-width: 90%;
+  float: none;
+  display: block;
+  min-height: auto;
+  margin:auto;
+}
 
 
 .form_title {    
@@ -815,9 +882,7 @@ textarea {
   display: none;
 }
 
-.social_iconsBlock {
-  margin-right: 38px;
-}
+
 
 
 .content_block.white {
@@ -845,6 +910,17 @@ textarea {
 
  
 }
+#msform {
+    padding-bottom: 40px;
+}
+
+
+.second_part {
+  height: 400px;
+  
+}
+
+
 .out_interest_white {
     font-size: 18px;
     
@@ -853,10 +929,7 @@ textarea {
 }
 
 
-.first_part,
-.second_part {
-  width: 100%;
-}
+
 
 .form_container {
   width: 90%;
@@ -1187,6 +1260,10 @@ font-size: 20px;
 
 @media screen and (max-width : 550px){
 
+.contacts {
+  min-height: 180px;
+  
+}
 
 
 
@@ -1230,6 +1307,11 @@ font-size: 20px;
    margin:auto;
    margin-bottom: 15px;
    float: none;
+}
+
+#msform #send {
+  position: relative;
+
 }
 
 #progressbar {
