@@ -90,11 +90,11 @@ $("#send").click(function(){
     });
 });
 
-$('#turnOn_video').on('click', function(){
-$('.video_block__content').hide('slow');
-$('#video').show('slow');
-$('#video')[0].play();
-});
+// $('#turnOn_video').on('click', function(){
+// $('.video_block__content').hide('slow');
+// $('#video').show('slow');
+// $('#video')[0].play();
+// });
 
 
 

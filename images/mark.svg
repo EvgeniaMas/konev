@@ -12,5 +12,5 @@
       <feBlend result="blend" in2="SourceGraphic"/>
     </filter>
   </defs>
-  <path id="mark.svg" class="cls-1" d="M846.414,1856l-26.407-26.33,6.6-6.58,19.8,19.74,49.984-49.84,6.6,6.59Z" transform="translate(-820 -1793)"/>
+  <path id="path123" class="cls-1" d="M846.414,1856l-26.407-26.33,6.6-6.58,19.8,19.74,49.984-49.84,6.6,6.59Z" transform="translate(-820 -1793)"/>
 </svg>

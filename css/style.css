@@ -68,6 +68,19 @@
 html {
 overflow-x: hidden;
 }
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table
+}
+
+.clearfix:after,
+.container:after {
+    clear: both
+}
+
+
 .out_text.directions {  
   position: relative;
 }
@@ -143,21 +156,22 @@ overflow-x: hidden;
     right: 10px;
     z-index: 0;    
 }
-
+ 
 .content_block.green {
   background-image: -moz-linear-gradient( 42deg, rgb(36,195,159) 0%, rgb(53,214,178) 100%);
   background-image: -webkit-linear-gradient( 42deg, rgb(36,195,159) 0%, rgb(53,214,178) 100%);
   background-image: -ms-linear-gradient( 42deg, rgb(36,195,159) 0%, rgb(53,214,178) 100%);
-  height: 365px;
-  
+   display: flex; 
 }
+
+
 .content_block.white{
  
  background-size: cover;
+ box-sizing: border-box;
  background-position: center;
  background-repeat: no-repeat;
-  max-width: 367px;
-  height: 365px;
+  
   font-size: 20px;
   font-family: "IBM Plex Sans";
   color: rgb(37, 37, 37);
@@ -203,7 +217,7 @@ overflow-x: hidden;
 .content_block {
     padding-right: 0;
     padding-left: 0;   
-    height: 365px;
+    
 }
 
 .cross {
@@ -251,7 +265,15 @@ overflow-x: hidden;
     border-bottom: 1px solid #fff;
     position: relative;
     z-index: 33;
-}
+   
+    margin:auto;
+    }
+    .footer_content{
+     width: 85vw;
+     max-width: 1270px;
+     
+    }
+
 p.copyright {
     color: #fff;
     font-family: 'IBM Plex Sans';
@@ -388,27 +410,59 @@ textarea {
     height: 319px;
 }
 .first_part {
-    width: 69%;
+    width: 65%;
      float: left;
       padding-left: 0px;
       padding-right: 10px;
+      box-sizing: border-box;
 }
 .second_part {
     width: 30%;
     float: left;
     padding-left: 10px;
     padding-right: 0px;
+    box-sizing: border-box;
 }
+
+@media screen and (min-width : 1081px){
+  .content_block.green,
+  .content_block.white,
+  .content_block{ 
+ 
+  max-width: 367px;
+  height: 365px;
+  
+  }
+
+  #progressbar {
+    padding-left: 0;
+}
+  .file-upload {
+  display: inline-block;
+  max-width: 156px;
+  margin-right: 15px;
+  float: left;
+}
+
+.video_block {
+    width: 66%;
+    margin-left: 33%;
+    
+}
+}
+
+
+
 
 @media screen and (min-width : 1200px) and (max-width : 1300px){
 .second_part {
   
-    width: 40%;
+    width: 50%;
     box-sizing: border-box;
 }
 .first_part {
     
-    width: 55%;
+    width: 50%;
     box-sizing: border-box;
 }
 
@@ -469,10 +523,11 @@ textarea {
     list-style-type: none;
     color: #fff;
     text-transform: uppercase;
-    font-size: 9px;  
+    font-size: 18px;  
     width: 80px;
     float: left;
     position: relative;
+    font-family: "IBM Plex Sans Bold";
 }
 
 
@@ -486,22 +541,24 @@ textarea {
     display: block;
     font-size: 20px;
     color: #fff;
-    background-color: rgba(80, 227, 194, 0.8);   
+    /*background-color: red;   */
     
 }
 
 #progressbar li:nth-child(1){
-  background-color: #40b69b;
+  background-color: #50e3c2;
 }
 
 #progressbar li:nth-child(2){
-  background-color: #308874;
+  background-color: #41b89e;
 }
 #progressbar li:nth-child(3){
-  background-color: #205b4e;
+  background-color: #328c7a;
 }
 
-
+#progressbar li:nth-child(4){
+  background-color: #266459;
+}
 
 #progressbar li:first-child:after {
     
@@ -517,8 +574,9 @@ textarea {
 .file-upload {
      position: relative; /* Даем возможность делать позиционирование, внутри данного элемента */
      overflow: hidden; /* Все что выходит за пределы - скрываем */
-     width: 49%;
-     height: 60px;
+     width: 46%;
+     height: 40px;
+     line-height: 40px;
      background: #fff;
      border-radius: 3px;
      padding: 8px 4px;
@@ -580,7 +638,7 @@ textarea {
 }
 
 #msform input.compulsory1{
-  flex: 1;
+  /*flex: 1;*/
   width: 28%;
   max-width: 347px;
  
@@ -588,7 +646,7 @@ textarea {
 }
 
 #msform input.compulsory2{
-  flex: 1;
+ /* flex: 1;*/
   max-width: 531px;
   width: 45%;
  
@@ -640,19 +698,56 @@ textarea {
 @media screen and (min-width : 769px) and (max-width : 1080px) {
 
 .offer {
-  margin-top: 36%;
+  margin-top: 33%;
 }
 }
-
-
-
-
 
 @media screen and (max-width : 1080px){
 .wrapper {
   width: 90vw;
   position: static;
- 
+}
+
+.video_block {
+    width: 100%;
+    margin-left: 0;  
+    padding-left: 20px;  
+
+}
+
+
+
+.main_content{
+  max-width: 90%;
+  margin:auto;
+}
+
+.content_block.out_white
+ {
+  width: 100%;
+  min-width: 100%;
+  height: 200px;
+  display: flex;  
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.out_interest_black {
+  padding-left: 0;
+  padding-top: 0;
+  margin:auto;
+  text-align: center;
+  
+}
+
+.content_block.green {
+  margin-top: 36px;
+  margin-bottom: 22px;
+  height: 200px;
+  width: 100%;
+  min-width: 100%;
+  display: flex;
+  
 }
 
 
@@ -660,10 +755,10 @@ textarea {
 
 
 .get_offer {
-   width: 100%;
-   margin:auto;
-   max-width: 100%;
-   margin-top: 210px;
+   width: 33%;
+   display: block;
+   max-width: 344px;
+   margin-bottom: 22px;
 }
 
 .overlay {
@@ -675,7 +770,7 @@ textarea {
 }
 
 .project_authormobile {
-    width: 100vw;   
+    width: 90vw;   
     position: absolute;
     top: 0%;
     right: 0%;
@@ -686,30 +781,34 @@ textarea {
 
 
 #msform .action-button {
-    width: 231px;
+    width: 288px;
     height: 70px;
     font-size: 17px;
     line-height: 70px;
      float: right;    
 }
 
-
-
-
-.content_block.out_white,
-.content_block.green {
-  width: 100%;
-  max-height: 213px;
-  display: flex;
-  
+.file-upload {
+  display: inline-block;
+  max-width: 156px;
+  margin-right: 15px;
+  float: left;
 }
-.out_interest_black {
+
+#progressbar {
   padding-left: 0;
-  padding-top: 0;
-  margin:auto;
-  text-align: center;
-  
 }
+
+
+
+
+.form_title {    
+    margin-top: 87px;
+   
+    
+}
+
+
 .empty {
   display: none;
 }
@@ -719,10 +818,20 @@ textarea {
 }
 
 
+.content_block.white {
+    
+    font-size: 18px;
+    font-family: "IBM Plex Sans Medium";
+    
+}
+
+
 .content_block.black,
 .content_block.black_hell,
 .content_block.white {
   width: 50%;
+  height: 343px;
+}
 }
 
 @media screen and (max-width : 450px){
@@ -749,11 +858,7 @@ textarea {
   width: 90%;
   margin:auto;
 }
-.video_block {
-    width: 100%;
-    margin:auto;
-    
-}
+
 
 
 
@@ -791,6 +896,147 @@ textarea {
   padding-right: 15px;
   padding-left: 15px;
 }
+
+
+
+.popup {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #808040;
+    left: 50%;
+    margin-left: -190px;
+    padding: 25px 20px;
+    position: fixed;
+    top: 80px;
+    width: 390px;
+    min-height: 320px;
+    z-index: 200;
+    display: none
+}
+
+
+#blindLayer {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.8);
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 199;
+    display: none;
+    height: 100%;
+    width: 100%
+}
+
+.close1 {
+    background: url('../images/close.png') no-repeat 0px 0px;
+    color:#333;
+    background-size: contain;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    text-align: center;
+    right: 5px;
+    top: 10px;
+    cursor: pointer;
+    -webkit-transition: color 0.2s ease-in-out;
+    -moz-transition: color 0.2s ease-in-out;
+    -o-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+    z-index: 201;
+}
+
+
+
+
+
+@media screen and (max-width : 767px){
+
+.popup {
+    
+    
+    left: 50%;
+    margin-left: -150px;
+    padding: 15px 10px;
+    position: fixed;
+    top: 40px;
+    width: 300px;
+    min-height: 200px;
+    z-index: 200;
+    
+}
+
+
+.close1 {
+    width: 20px;
+    height: 20px;
+    position: absolute;    
+    right: 15px;
+    top: 5px;
+    z-index: 201
+   
+}
+
+
+
+
+#user_block, .contacts {
+  display: block;
+  margin-bottom: 2px;  
+}
+
+.video_block__title {
+    
+    padding-left: 24px;
+    
+    width: 60%;
+}
+
+#turnOn_video {
+    
+    margin: auto;
+    
+}
+
+
+.content_block.out_white
+ {
+   
+  
+  margin-bottom: 0px;
+}
+
+.content_block.green {
+  
+  margin-bottom: 0;
+ 
+  
+}
+
+.content_block.white {
+    width: 100%;
+    min-width: 100%;
+    height: 558px;
+}
+
+.content_block.white {
+    
+    font-size: 30px;
+    line-height: 30px;
+}
+
+#msform input, #msform textarea {
+    font-size: 30px;
+    color: #989898;
+    resize: none;
+}
+
+.fs-title {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
 #progressbar li {
   width: 50px;
   height: 70px;
@@ -805,16 +1051,6 @@ textarea {
   
 }
 
-
-}
-
-@media screen and (max-width : 768px){
-#user_block, .contacts {
-  display: block;
-  margin-bottom: 2px;
-  
-  
-}
 
 #msform input.compulsory1{
   
@@ -839,6 +1075,10 @@ textarea {
 }
 
 
+
+
+
+
 .main_content {
   max-width: 100%; 
   
@@ -857,6 +1097,18 @@ textarea {
 }
 
 }
+
+@media screen and (max-width : 991px){
+a.get_offer {
+    width: 100%!important;
+    min-width: 100%;
+    display: block;
+    max-width: 700px;
+    
+}
+}
+
+
 
 @media screen and (max-width : 640px){
 .footer {
@@ -890,8 +1142,8 @@ textarea {
 }
 
 .video_block__title {
-    font-size: 24px;
-    width: 86%;
+    font-size: 30px;
+    width: 70%;
     padding-left: 15px;
 }
 
@@ -906,11 +1158,11 @@ textarea {
   position: absolute;
   bottom:0;
   left:50%;
-  margin-left: -148px;
+  margin-left: -175px;
   z-index: 23;
   display: block;
   margin-bottom: 0;
-  width: 298px;
+  width: 350px;
 }
 .footer_content {
   height: 443px;
@@ -930,8 +1182,9 @@ img.social_icon {
 
 p.copyright{
 text-align: center;
-padding-top: 40%;
+padding-top: 35%;
 display: block;
+font-size: 20px;
 }
 
 }
@@ -1037,6 +1290,21 @@ display: block;
     font-size: 15px;
     
 }
+.content_block.white {
+    
+    font-size: 23px;
+    line-height: 23px;
+}
+
+#msform input, #msform textarea {
+    font-size: 20px;
+   
+}
+.fs-title {
+    font-size: 18px;
+    line-height: 20px;
+}
+
 }
 
 @media screen and (max-width: 340px){
@@ -1044,8 +1312,26 @@ display: block;
     font-size: 29px;
     max-width: 95%;
 }
+
+.video_block__title {
+    font-size: 26px;
+    
+}
 }
 
 
+.user_form {
+text-align: center;
+color: #fff;
+font-size: 20px;
+background-color: #fb6e14;
+margin-top: 10px;
+margin-bottom: 20px;
+width: 95%;
+}
+
+.contacts {
+  max-height: 30px;
+}
 
 
