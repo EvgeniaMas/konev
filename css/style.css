@@ -830,7 +830,9 @@ textarea {
 .content_block.black_hell,
 .content_block.white {
   width: 50%;
-  height: 343px;
+  min-width: 50%;
+  min-height: 343px;
+  box-sizing: border-box;
 }
 }
 
