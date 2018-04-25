@@ -289,7 +289,7 @@ opacity: 0.71;
             <div class="video_block">
                 
                 <div class="video_block__content">
-                   <button onclick="PopUpShow()" id="turnOn_video"></button>
+                  <!--  <button onclick="PopUpShow()" id="turnOn_video"></button> -->
                     <p class="video_block__title">Как получить инвестиции?</p>
                 </div>
             </div>
@@ -383,12 +383,11 @@ opacity: 0.71;
 <section id="form">
     <div class="container ">
     <h2 class="form_title">Расскажите о своём проекте</h2>
-     <div class="form_container">               
+     <div id="full_form" class="form_container">               
      <form id="msform" action="mail.php" method="POST" enctype="multipart/form-data">    
     <fieldset>
       <div class="first_part">
-        <h3 class="fs-title">Ёмко опишите Ваш стартап</h3> 
-        
+        <h3 class="fs-title">Ёмко опишите Ваш стартап</h3>
         <textarea name="startup" placeholder="Что за продукт? Какую проблему решает? В чем его конкурентные преимущества?"></textarea>
         </div>
         <div class="second_part"> 
@@ -412,17 +411,17 @@ opacity: 0.71;
         <input type="text" id="filename_presentation" class="filename" disabled>
         <input type="text" id="filename_plan" class="filename" disabled>
          </div>      
-        <button class="next action-button"> Далее<img class="button_icon" src="images/button_arrow.png" alt="Иконка"></button>
+        <a class="next action-button"> Далее<img class="button_icon" src="images/button_arrow.png" alt="Иконка"></a>
     </fieldset>
     <fieldset>        
         <h3 class="fs-title">Сколько вам нужно денег? На что они пойдут?</h3>
         <textarea name="user_budget" placeholder="Четко, без общих фраз типа: на 'маркетинг' или 'масштабирование'"></textarea>      
-        <button class="next action-button"> Далее<img class="button_icon" src="images/button_arrow.png" alt="Иконка"></button>
+        <a class="next action-button"> Далее<img class="button_icon" src="images/button_arrow.png" alt="Иконка"></a>
     </fieldset>
     <fieldset>        
         <h3 class="fs-title">Сколько мы с вами сможем заработать?</h3>
         <textarea name="user_profit" placeholder="Сколько и на чем мы заработаем? Как прикинули эту сумму? Что для этого должно произойти?" ></textarea>       
-        <button class="next action-button"> Далее<img class="button_icon" src="images/button_arrow.png" alt="Иконка"></button>   
+        <a class="next action-button"> Далее<img class="button_icon" src="images/button_arrow.png" alt="Иконка"></a>   
     </fieldset>
     <fieldset>
        <h3 class="fs-title">Заполните контактную информацию</h3>
@@ -455,7 +454,7 @@ opacity: 0.71;
     </div>
 </div>
 </div><!--end wrapper-->
-<footer class="footer container-fluid">        
+<footer class="footer">        
         <div class="container footer_content">          
                 <p class="copyright">&copy; 2018 Фонд Никиты Конева. All rights reserved. </p>               
                 <div class="social_iconsBlock">
@@ -466,21 +465,17 @@ opacity: 0.71;
             </div>        
 </footer>
 <!-- END FOOTER -->
-
-<div id="blindLayer" class="container-fluid"></div>
+<div id="blindLayer"></div>
 <!-- Попап заказа обратного звонка  и прайс-листа-->
- <div id="popup1" class= "popup" >
- 
+ <div id="popup1" class= "popup" > 
   <a href="javascript:PopUpHide()">
   <p  class="close1"></p> </a>
   <form id="back_call_popup">
     <video id="video" controls="controls">
         <source src="invest.mp4" type="video/mp4">                      
-    </video>
-   
+    </video>   
   </form>
 </div>
-
 <script src='js/jquery.js'></script>
 <script src='js/ease.js' ></script>    
 <script src='js/wow.min.js' ></script>
@@ -491,20 +486,9 @@ if ($('.wow').hasClass('animated')) {
             $(this).removeAttr('style');
             new WOW().init();
 }
-
 </script>
 <script src='js/index.js' defer></script>
-<script src='js/popUp.js' defer></script>
-<script> var path = document.querySelector("svg path");
-var total_length = path.getTotalLength();
-console.log(total_length);</script>
 </body>
 </html>
 
 
-<!-- <script>
-$('.make_order').on('submit', function(event) { 
-$('.modal_callback').css('display','none');
-$('#deliver_message').modal('show');                                    
-});
-</script> -->

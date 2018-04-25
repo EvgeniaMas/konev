@@ -75,12 +75,8 @@ $("#send").click(function(){
 });
 });
 
-
-        
-
-
- 
-   $(document).ready(function(){
+  
+$(document).ready(function(){
     $('.get_offer').click( function(){ 
     var scroll_el = $(this).attr('href'); 
         if ($(scroll_el).length != 0) { 
@@ -89,15 +85,6 @@ $("#send").click(function(){
         return false; 
     });
 });
-
-// $('#turnOn_video').on('click', function(){
-// $('.video_block__content').hide('slow');
-// $('#video').show('slow');
-// $('#video')[0].play();
-// });
-
-
-
 
 
 $(document).ready( function() {
@@ -111,3 +98,26 @@ $(document).ready( function() {
          $("#filename_plan").val(filename);
     });
 });
+
+
+//для видео на будущее
+   // $(document).ready(function(){
+         
+   //      PopUpHide();
+   //  });
+
+    
+   //  function PopUpShow(){
+   //      $("#popup1").show('slow');
+        
+   //      $('#video').attr('src', 'invest.mp4');
+   //      $("#blindLayer").css("display","block");
+        
+
+   //  }
+   
+   //  function PopUpHide(){       
+   //     $('#video').attr('src', '');
+   //     $("#popup1").hide('slow');
+   //     $("#blindLayer").css("display","none");
+   //  }
