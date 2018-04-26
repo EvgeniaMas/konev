@@ -72,12 +72,12 @@ overflow-x: hidden;
 .clearfix:before,
 .clearfix:after {
     content: " ";
-    display: table
+    display: table;
 }
 
 .clearfix:after,
 .container:after {
-    clear: both
+    clear: both;
 }
 
 
@@ -106,18 +106,18 @@ overflow-x: hidden;
 .svg_icons {
   display: block;
   margin:auto;
-  margin-top: 50px;
+  margin-top: 3.125rem;
 }
 .out_interest_white{
    color: #fff;    
-   bottom: 20px;
+   bottom: 1.25rem;
    text-align: center;
-   font-size: 20px;
+   font-size: 1.25rem;
    font-family: "IBM Plex Sans Medium";  
 }
 .out_interest_black {
   font-family: "IBM Plex Sans Light"; 
-  font-size: 40px; 
+  font-size:  2.5rem; 
   letter-spacing: 1.1px;
    line-height: 1.25;
    text-align: left;
@@ -126,21 +126,21 @@ overflow-x: hidden;
    padding-top: 23%;
 }
 .out_interest_black span.red {
-  border-bottom: 4px solid rgb(231, 84, 84);
+  border-bottom: 0.25rem solid rgb(231, 84, 84);
 }
 .out_of_icon {
     display: inline-block;
-    width: 100px;
-    height: 97px;
+    width: 6.25rem;
+    height: 6.0625rem;
    }
 .acceptable_icon {
-    width: 83px;
-  height: 63px;  
+    width: 5.1875rem;
+  height: 3.9375rem;  
   display: block;
   margin-bottom: 18%;
 }
 .acceptable_text .description {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-family: "IBM Plex Sans Medium";
   color: rgb(37, 37, 37);
   line-height: 1.5;
@@ -149,11 +149,11 @@ overflow-x: hidden;
   margin:auto;   
 }
 .back_icon {
-    width: 250px;
-    height: 250px;
+    width: 15.625rem;
+    height: 15.625rem;
     position: absolute;
     bottom: 0;
-    right: 10px;
+    right: 0.625rem;
     z-index: 0;    
 }
  
@@ -173,12 +173,16 @@ overflow-x: hidden;
  background-position: center;
  background-repeat: no-repeat;
   
-  font-size: 20px;
+  font-size: 1.25rem;
   font-family: "IBM Plex Sans";
   color: rgb(37, 37, 37);
   padding-right: 3%;
-  padding-top: 5%;
-  padding-left: 4%;
+  /*padding-top: 5%;
+  padding-left: 4%;*/
+   padding-top: 2.375rem;
+   padding-left: 3.375rem;
+  
+
   border: 1px solid #061016;
 }
 
@@ -199,7 +203,7 @@ overflow-x: hidden;
 }
 
 .criterion {
-  font-size: 40px;
+  font-size: 2.5em;
   font-family: "IBM Plex Sans Light";
   color: rgb(255, 255, 255);
   line-height: 1.25;
@@ -222,19 +226,19 @@ overflow-x: hidden;
 }
 
 .cross {
-    height: 100px;
-    width: 100px;
+    height: 6.25rem;
+    width: 6.25rem;
     background-color: transparent;
     margin:auto;
     position: absolute;
-    top:70px;    
+    top:4.375rem;    
     left:0;
     right:0;
 }
 
 .x {
-  width: 110px;
-  height: 110px;
+  width: 6.875rem;
+  height: 6.875rem;
   position: relative;
 }
 
@@ -246,7 +250,7 @@ overflow-x: hidden;
   left: 0;
   right: 0;
   bottom: 0;
-  border-right: 5px solid #e75454;
+  border-right: 0.3125rem solid #e75454;
 }
 
 .x::before {
@@ -258,15 +262,13 @@ overflow-x: hidden;
 }
 
 #msform {
-  width: 100%;
-  padding-bottom: 115px;
+  width: 100%; 
   
 }
-
 .footer {
     background-color: #000;
-    min-height: 150px;
-    line-height: 150px;
+    min-height: 9.375rem;
+    line-height: 9.375rem;
     border-bottom: 1px solid #fff;
     position: relative;
     z-index: 33;
@@ -275,34 +277,34 @@ overflow-x: hidden;
     }
     .footer_content{
      width: 80vw;
-     max-width: 1270px;
-     
+     max-width: 1100px;
+     margin:auto;
+        
     }
 
 p.copyright {
     color: #fff;
     font-family: 'IBM Plex Sans';
     text-align: left;
-    font-size: 16px;
+    font-size: 1rem;
     display: inline;
 }
 
 div.social_iconsBlock {
     display: inline-block;
     float: right;
-    margin-right: 15px;
-    padding-bottom: 13px;
+    margin-right:  0.9375rem;
+    padding-bottom: 0.8125rem;
 }
 
-div.social_iconsBlock a {
-    
+div.social_iconsBlock a {    
     display: inline-block;
-    margin-right: -5px;
+    margin-right: -0.3125rem;
 }
 
 img.social_icon {
     display: inline-block;
-    height: 50px;
+    height: 3.125rem;
     transition-property: all;
     transition: .4s;
     border: 1px solid #3a5a84;
@@ -319,7 +321,7 @@ opacity: 0.8;
  
 .form_container {
     /*min-height: 540px;*/
-    padding-bottom: 30px; 
+    padding-bottom: 1.875rem; 
     position: relative;
     
 }
@@ -339,16 +341,12 @@ opacity: 0.8;
   float: left;
 }
 
-
-
-
-
 #form {
   position: relative;
   z-index: 23;
+  width: 99%;
+ 
 }
-
-
 
 #msform {
     width: 100%;
@@ -364,10 +362,11 @@ opacity: 0.8;
     box-sizing: border-box;
     min-width: 100%; 
     position: relative;
+    display: none;
 }
 
-#msform fieldset:not(:first-of-type) {
-    display: none;
+#msform fieldset.double_section {
+  display: block;
 }
 
 #msform input, #msform textarea {
@@ -386,17 +385,17 @@ opacity: 0.8;
 }
 
 #msform input.team_amount {
-  max-width: 129px;
+  max-width: 8.0625rem;
   margin-left: 0;
   font-family:'IBM Plex Sans Medium';
-     font-size: 14px;
+     font-size: 0.875rem;
      display: block;
      text-align: left;
 }
 
 #msform .action-button {
-    width: 331px;
-  height: 80px;
+    width: 20.6875rem;
+  height: 5em;
   background-color:  rgb(36,195,159);
    background-image: -moz-linear-gradient( 42deg, rgb(36,195,159) 0%, rgb(53,214,178) 100%);
   background-image: -webkit-linear-gradient( 42deg, rgb(36,195,159) 0%, rgb(53,214,178) 100%);
@@ -410,99 +409,40 @@ opacity: 0.8;
     font-size: 18px;
     line-height: 80px;
     cursor: pointer;
-    margin-top: 43px;
+  /*  margin-top: 43px;*/
     float: right; 
 }
 textarea {
-    height: 319px;
+    height: 19.9375rem;
 }
-
-
-
 .first_part {
     width: 65%;    
      display: inline-block;
       padding-left: 0px;
-      padding-right: 10px;
+      padding-right: 0.625rem;
       box-sizing: border-box;
-      float: left;     
-      
-      min-height: 380px;
+      float: left;
+      /*min-height: 380px;*/
       
 }
 .second_part {
-    width: 35%;
-   
+    width: 35%;   
     float: left;
-    padding-left: 10px;
+    padding-left: 0.625rem;
     padding-right: 0px;
     box-sizing: border-box;
-    float: left;
-   
+    float: left;   
     display: block;
-    min-height: 400px;
-    margin-bottom: 43px;
+    /*min-height: 400px;*/
+    /*margin-bottom: 43px;*/
 
 }
-
-@media screen and (min-width : 1200px){
-  .content_block.green,
-  .content_block.white,
-  .content_block{ 
- 
-  width: 365px;
-  height: 360px;
-  box-sizing: border-box;
-  
-  }
-
-}
-
 .file-upload {
   display: inline-block;
   max-width: 50%;
-  margin-right: 15px;
+  margin-right: 0.9375rem;
   float: left;
 }
-
-
-@media screen and (min-width : 1081px){
-  .content_block.green,
-  .content_block.white,
-  .content_block{ 
- 
-  max-width: 367px;
-  height: 365px;
-  
-  }
-
-  .social_iconsBlock {
-  margin-right: 0px;
-}
-
-  #progressbar {
-    padding-left: 0;
-}
-  .file-upload {
-  display: inline-block;
-  max-width: 156px;
-  margin-right: 15px;
-  float: left;
-}
-
-.video_block {
-    width: 66%;
-    margin-left: 33%;
-    
-}
-
-
-
-}
-
-
-
-
 
 #msform .action-button:hover, #msform .action-button:focus {
     box-shadow: 0 0 0 2px rgba(80, 227, 194, 0.8);   
@@ -510,43 +450,47 @@ textarea {
     background-color:rgba(80, 227, 194);
 }
 .fs-title {
-    font-size: 16px;
+    font-size: 1rem;
     display: block;
     text-transform: none;
     color: #fff;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     text-align: left;
     font-family:"IBM Plex Sans Medium";
     margin-top: 0;
-    margin-bottom: 13px;
+    margin-bottom: 0.8125rem;
 
 }
 
-
+.button_block {
+  
+  min-height: 18.75rem;
+  padding-top: 2.4375rem;
+}
 
 
 #progressbar {    
     overflow: hidden;    
     counter-reset: step;
-    max-width: 440px;   
-    padding-bottom: 115px;
-    position: relative; 
-    display: inline-block;
-    position: absolute;
-    bottom: 0%;
-    left: 0;
+    max-width: 27.5rem;   
+    /*padding-bottom: 115px;*/
+   /* position: relative; 
+    display: inline-block;*/
+
+
+position:relative;
+/*left:-50%;*/
+float:left;
+margin:0 10px;
+height:5rem;    
 }
 
-
-@media screen and (max-width : 540px){
-#progressbar {    
-     
-    padding-bottom: 0px;
-    
+#progressbar ul li {
+color: #fff;
+display:block;
+text-decoration:none;
+padding:0 0.9375rem;
 }
-}
-
-
 
 .form_container {
   
@@ -556,21 +500,27 @@ textarea {
 }
 
 .form_title {
-  font-size: 40px;
+  font-size: 2.5rem;
   text-align: center;
-  line-height: 40px; 
+  line-height: 2.5rem; 
   font-family: "IBM Plex Sans Light";
-  margin-top: 112px;
-  margin-bottom: 64px;
-  letter-spacing: 1.3px;
+  margin-top: 7rem;
+  margin-bottom: 4rem;
+  letter-spacing: 0.08125rem;
 }
+
+
+#progressbar {
+  float: left;
+}
+
 
 #progressbar li {
     list-style-type: none;
     color: #fff;
     text-transform: uppercase;
-    font-size: 18px;  
-    width: 80px;
+    font-size: 1.125rem;  
+    width: 5rem;
     float: left;
     position: relative;
     font-family: "IBM Plex Sans Bold";
@@ -580,12 +530,12 @@ textarea {
 #progressbar li:before {
     content: counter(step);
     counter-increment: step;
-    width: 80px;
-    height: 80px;
-    line-height: 80px;
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
     text-align: center;
     display: block;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #fff;
     
     
@@ -621,14 +571,13 @@ textarea {
      position: relative; /* Даем возможность делать позиционирование, внутри данного элемента */
      overflow: hidden; /* Все что выходит за пределы - скрываем */
      width: 46%;
-     height: 40px;
-     line-height: 40px;
-     background: #fff;
-     border-radius: 3px;
-     padding: 8px 4px;
+     height: 2.5rem;
+     line-height: 2.5rem;
+     background: #fff;     
+     padding: 0.5rem 0.25rem;
      color: #000;
      text-align: center;
-     margin-bottom: 20px;
+     margin-bottom: 1.25em;
      display: inline-block;
     
 }
@@ -644,91 +593,96 @@ textarea {
      position: absolute;
      top: 0;
      left: 0;
-     /*width: 100%;
-     height: 100%;*/
+     width: 100%;
+     height: 100%;
      cursor: pointer;
+
 
 }
 .file-upload span {
-     line-height: 60px; 
+     line-height: 3.75rem; 
      font-family:'IBM Plex Sans Medium';
-     font-size: 14px;
+     font-size: 0.875rem;
+     display: block;
+     background-color: #fff;
+
 
      /* Делаем вертикальное выравнивание текста, который написан на кнопке */
 }
 
 .upload_icon {
-  width: 15px;
+  width: 0.9375rem;
   display: inline-block;
-  margin-right: 25px;
+  margin-right: 1.5625em;
 }
 
 .button_icon {
-  width: 20px;
+  width: 1.25em;
   display: inline-block;
-  margin-left: 55px;
+  margin-left: 3.4375rem;
 }
 
-#user_block {
+#user_block, .contacts {
   display: flex;
-  margin-bottom: 29px;
+  margin-bottom: 1.8125rem;
   justify-content: space-between;
   
   
 }
 
-.contacts {
-  display: flex;
-  margin-bottom: 29px;
-  justify-content: space-between;
-}
 
 #msform input.compulsory1{
-  /*flex: 1;*/
+ 
   width: 28%;
-  max-width: 347px;
+  max-width: 21.6875rem;
  
 
 }
 
 #msform input.compulsory2{
- /* flex: 1;*/
-  max-width: 531px;
+ 
+  max-width: 33.1875rem;
   width: 45%;
  
 }
 
+#msform #send {
+  position: relative;
+  display: none;
 
+}
 
 #letter_sent {
-  height: 508px; 
+  margin:auto;
+  height: 31.75rem; 
   background-image: -moz-linear-gradient( 42deg, rgb(36,195,159) 0%, rgb(53,214,178) 100%);
   background-image: -webkit-linear-gradient( 42deg, rgb(36,195,159) 0%, rgb(53,214,178) 100%);
   background-image: -ms-linear-gradient( 42deg, rgb(36,195,159) 0%, rgb(53,214,178) 100%);
   box-shadow: 0px 19px 142px 0px rgba(0, 0, 0, 0.72);
-  padding-top: 80px;
-  padding-bottom: 64px;
-  margin-bottom: 20px;
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+  margin-bottom: 1.25rem;
   display: none;
+ 
 }
 
 .letter {
-  font-size: 40px;
+  font-size: 2.5rem;
   font-family: "IBM Plex Sans Light";
   letter-spacing: 2px;
   color: rgb(255, 255, 255);
-  line-height: 42px;
-  margin-top: 35px;
+  line-height: 2.625rem;
+  margin-top: 2.1875rem;
   text-align: center;
 }
 
 .letter.smaller_text {
-   font-size: 24px;
+   font-size: 1.5rem;
   font-family: "IBM Plex Sans";
-  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
   color: rgb(255, 255, 255);
-  line-height: 24px;
-  margin-top: 25px;
+  line-height: 1.5rem;
+  margin-top: 1.5625rem;
   text-align: center;
   width: 60%;
   margin:auto;
@@ -737,213 +691,14 @@ textarea {
 .svg_sent {
   text-align: center;
    display: block;
-  margin:auto;
-
+    margin:auto;
 }
-
-@media screen and (min-width : 769px) and (max-width : 1080px) {
-
-.offer {
-  margin-top: 33%;
-}
-}
-
-
-
-@media screen and (max-width : 1080px){
-.wrapper {
-  width: 90vw;
-  position: static;
-}
-#form {
- width: 90%; 
- margin:auto;
-}
-
-
-#msform input.product {
-  max-width: 300px;
-  display: block;
-  text-align: left;
-
-
-}
-
-
-.video_block {
-    width: 100%;
-    margin-left: 0;  
-    padding-left: 20px;  
-
-}
-
-.social_iconsBlock {
-  margin-right: 38px;
-}
-
-
-
-.content_block.out_white
- {
-  width: 100%;
-  min-width: 100%;
-  height: 200px;
-  display: flex;  
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-.out_interest_black {
-  padding-left: 0;
-  padding-top: 0;
-  margin:auto;
-  text-align: center;
-  
-}
-
-.content_block.green {
-  margin-top: 36px;
-  margin-bottom: 22px;
-  height: 200px;
-  width: 100%;
-  min-width: 100%;
-  display: flex;
-  
-}
-
-
-
-
-
-.get_offer {
-   width: 33%;
-   display: block;
-   max-width: 344px;
-   margin-bottom: 22px;
-}
-
-.overlay {
-  display: block;
-}
-
-.project_author {
-     display: none;
-}
-
-.project_authormobile {
-    width: 90vw;   
-    position: absolute;
-    top: 0%;
-    right: 0%;
-    z-index: 1;  
-    display: block; 
-
-}
-
-
-#msform .action-button {
-    width: 288px;
-    height: 70px;
-    font-size: 17px;
-    line-height: 70px;
-     float: right;    
-}
-
-.file-upload {
-  display: inline-block;
-  max-width: 156px;
-  margin-right: 15px;
-  float: left;
-}
-
-#progressbar {
-  padding-left: 0;
-}
-
-.first_part,
-.second_part {
-  width: 90%;
-  max-width: 90%;
-  float: none;
-  display: block;
-  min-height: auto;
-  margin:auto;
-}
-
-
-.form_title {    
-    margin-top: 87px;
-   
-    
-}
-
-
-.empty {
-  display: none;
-}
-
-
-
-
-.content_block.white {
-    
-    font-size: 18px;
-    font-family: "IBM Plex Sans Medium";
-    
-}
-
-
-.content_block.black,
-.content_block.black_hell,
-.content_block.white {
-  width: 50%;
-  min-width: 50%;
-  min-height: 343px;
-  box-sizing: border-box;
-}
-}
-
-@media screen and (max-width : 450px){
-.content_block.black,
-.content_block.black_hell{
-  width: 100%;
-
- 
-}
-#msform {
-    padding-bottom: 40px;
-}
-
-
-.second_part {
-  height: 400px;
-  
-}
-
-
-.out_interest_white {
-    font-size: 18px;
-    
-}
-
-}
-
-
-
-
-.form_container {
-  width: 90%;
-  margin:auto;
-}
-
-
-
 
 .criterion {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-family: "IBM Plex Sans Light";
     color: rgb(255, 255, 255);
-    line-height: 40px;
+    line-height: 2.5rem;
     padding-left: 0px;
     padding-top: 0px;
     text-align: center;
@@ -969,447 +724,12 @@ textarea {
     max-width: 100%;
    
 }
-.container {
-  padding-right: 15px;
-  padding-left: 15px;
-}
 
 
 
-.popup {
-    background: none repeat scroll 0 0 #fff;
-    border: 1px solid #808040;
-    left: 50%;
-    margin-left: -190px;
-    padding: 25px 20px;
-    position: fixed;
-    top: 80px;
-    width: 390px;
-    min-height: 320px;
-    z-index: 200;
-    display: none
-}
 
 
-#blindLayer {
-    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.8);
-    bottom: 0;
-    left: 0;
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: 199;
-    display: none;
-    height: 100%;
-    width: 100%
-}
 
-.close1 {
-    background: url('../images/close.png') no-repeat 0px 0px;
-    color:#333;
-    background-size: contain;
-    cursor: pointer;
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    text-align: center;
-    right: 5px;
-    top: 10px;
-    cursor: pointer;
-    -webkit-transition: color 0.2s ease-in-out;
-    -moz-transition: color 0.2s ease-in-out;
-    -o-transition: color 0.2s ease-in-out;
-    transition: color 0.2s ease-in-out;
-    z-index: 201;
-}
 
-
-
-
-
-@media screen and (max-width : 767px){
-.popup {    
-    
-    left: 50%;
-    margin-left: -150px;
-    padding: 15px 10px;
-    position: fixed;
-    top: 40px;
-    width: 300px;
-    min-height: 200px;
-    z-index: 200;    
-}
-
-.close1 {
-    width: 20px;
-    height: 20px;
-    position: absolute;    
-    right: 15px;
-    top: 5px;
-    z-index: 201;
-   
-}
-#user_block, .contacts {
-  display: block;
-  margin-bottom: 2px;  
-}
-
-.video_block__title {
-    
-    padding-left: 24px;
-    
-    width: 60%;
-}
-
-#turnOn_video {
-    
-    margin: auto;
-    
-}
-
-
-.content_block.out_white
- {
-   
-  
-  margin-bottom: 0px;
-}
-
-.content_block.green {
-  
-  margin-bottom: 0;
- 
-  
-}
-
-.content_block.white {
-    width: 100%;
-    min-width: 100%;
-    height: 558px;
-}
-
-.content_block.white {
-    
-    font-size: 30px;
-    line-height: 30px;
-}
-
-#msform input, #msform textarea {
-    font-size: 30px;
-    color: #989898;
-    resize: none;
-}
-
-.fs-title {
-    font-size: 20px;
-    line-height: 30px;
-}
-
-
-#progressbar li {
-  width: 50px;
-  height: 70px;
-  float: left;
-}
-
-#progressbar li:before {
-    width: 50px;
-    height: 70px;
-    line-height: 70px;    
-    font-size: 18px;
-  
-}
-
-
-#msform input.compulsory1{
-  
-  width: 95%;
-  margin:auto;
-  max-width: 347px;
-  margin-bottom: 15px;
- 
-
-}
-
-#msform input.compulsory2{
-  width: 95%;
-  margin:auto;
-  max-width: 347px;
-  margin-bottom: 15px;
- 
-}
-
-.offer {
-  margin-top: 137px;
-}
-
-
-
-
-
-
-.main_content {
-  max-width: 100%; 
-  
-}
-
-
-
-.out_text.directions {
-  max-height: 343px;
-  
-}
-
-.content_block.white {
-  max-height: 343px;
-  
-}
-
-}
-
-@media screen and (max-width : 991px){
-a.get_offer {
-    width: 100%!important;
-    min-width: 100%;
-    display: block;
-    max-width: 700px;
-    
-}
-}
-
-
-
-@media screen and (max-width : 640px){
-.footer {
-  min-height: 443px;
-  line-height: 20px;
-  
-}
-
-
-#msform .action-button {
-    width: 200px;
-    height: 70px;
-    font-size: 17px;
-    line-height: 70px;
-    float: right;
-    
-}
-
-
-
-.video_block {
-    background-color: rgba(0, 0, 0, 0.302);
-    min-width: 280px;    
-    min-height: 220px;    
-
-}
-
-#turnOn_video {    
-    width: 50px;
-    height: 50px;   
-}
-
-.video_block__title {
-    font-size: 30px;
-    width: 70%;
-    padding-left: 15px;
-}
-
-.video_block__content {
-  margin:auto;
-  width: 94%;
-}
-.content_block.white {
-  width: 100%;
-}
-.social_iconsBlock {
-  position: absolute;
-  bottom:0;
-  left:50%;
-  margin-left: -175px;
-  z-index: 23;
-  display: block;
-  margin-bottom: 0;
-  width: 350px;
-}
-.footer_content {
-  height: 443px;
-  position: relative;
-  padding-left: 0;
-  padding-right:0;
-  margin:auto;
-  width: 100%;
-}
-
-img.social_icon {
-    display: inline-block;
-    height: 100px;
-    transition-property: all;
-    transition: .4s;
-}
-
-p.copyright{
-text-align: center;
-padding-top: 35%;
-display: block;
-font-size: 20px;
-}
-
-}
-
-@media screen and (max-width : 550px){
-
-.contacts {
-  min-height: 180px;
-  
-}
-
-
-
-.offer {
-    font-size: 29px;
-    max-width: 80%;
-}
-
-.offer_sum {
-    font-size: 35px;
-    line-height: 35px;
-    display: block;
-    padding-top: 18px;
-    padding-bottom: 18px;
-    letter-spacing: 3px;
-}
-.out_text.directions {
-    max-height: 250px;
-}
-.out_interest_black {    
-    font-size: 30px;
-    width: 90%;
-    
-}
-.criterion {
-    font-size: 30px;
-    width: 90%;
-}
-.form_title {
-    font-size: 30px;    
-    line-height: 30px;    
-    margin-top: 32px;
-    margin-bottom: 32px;
-    
-}
-#msform .action-button {
-    position: relative;
-   display: block;
-   width: 100%;
-   max-width: 250px;
-   margin:auto;
-   margin-bottom: 15px;
-   float: none;
-}
-
-#msform #send {
-  position: relative;
-
-}
-
-#progressbar {
-  float: none;
-  display: block; 
-  position: relative;
-   width: 100%;
-   margin:auto;
-}
-.video_block__title {
-    font-size: 24px;
-    width: 75%;
-    padding-left: 10px;
-}
-
-.video_block {
-          
-    min-height: 180px;
-    max-height: 300px;    
-
-}
-
-.out_text.directions {
-    max-height: 210px;
-}
-
-.content_block.white {
-    max-height: 323px;
-}
-
-.footer_content {
-    height: 343px;
-    
-}
-
-p.copyright{
-text-align: center;
-padding-top: 20%;
-display: block;
-}
-
-
-.acceptable_icon {
-    width: 63px;
-    height: 43px;
-    
-}
-.logo {
-    
-    width: 88px;
-    margin-right: 12px;
-}
-.fond_title {
-    font-size: 15px;
-    
-}
-.content_block.white {
-    
-    font-size: 23px;
-    line-height: 23px;
-}
-
-#msform input, #msform textarea {
-    font-size: 20px;
-   
-}
-.fs-title {
-    font-size: 18px;
-    line-height: 20px;
-}
-
-}
-
-@media screen and (max-width: 340px){
-.offer {
-    font-size: 29px;
-    max-width: 95%;
-}
-
-.video_block__title {
-    font-size: 26px;
-    
-}
-}
-
-
-.user_form {
-text-align: center;
-color: #fff;
-font-size: 20px;
-background-color: #fb6e14;
-margin-top: 10px;
-margin-bottom: 20px;
-width: 95%;
-}
-
-.contacts {
-  max-height: 30px;
-}
 
 

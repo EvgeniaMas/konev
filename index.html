@@ -12,26 +12,104 @@
    <!--  <link href="css/grid.css" rel="stylesheet"> -->
     <!-- Favicon -->
     <style>
-    body{
-    width: 100vw;
-    height: 100%;
-    margin-bottom: -150px;
+    html{
+    	font-size: 16px;
+    }
+    body{  
     min-width: 320px;
-    padding: 0px;
-    margin: 0px auto;      
-    font-size: 16px;
+    height: 100%;
+    padding: 0;
     line-height: 1.5em;
     color: #fff;
     background-image: url(images/noise.jpg);
     background-position: center top;
     background-size: cover;
-    background-repeat: no-repeat;   
+    background-repeat: no-repeat;    
+    
+}
+   .wrapper {
+    width: 80vw;
+    max-width: 1100px;
+    max-width:  68.75rem;
+    min-height: 100%;
+    height: 100%;
+    padding:0;    
+    position: relative;
+    z-index: 12; 
+    margin:auto;
+    margin-bottom: -9.375rem;
+       
+}
+.overlay {
+  
+    background: rgba(0, 0, 0, 0.2) repeat-y;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    display: none;
+    right: 0;
+    top: 0;
+    z-index: 3;   
+    height: 100%;
+    min-height:100%;
+    width: 100%
+}
+/*Шапка*/
+header {
+    padding-top: 5.1875rem;
+    position: relative;
+    z-index: 13;
+    font-size: 16px;
 }
 
-.project_author {
-   /* width: 100%;   */
+.logo  {
+float: left;
+width: 6.0625em;
+margin-right: 1.0625em;
+}
+
+
+
+.fond_title {
+    text-transform: uppercase;
+    max-width:  4.375em;
+    font-size: 1em;
+    font-family: 'IBM Plex Sans';
+    text-align: left;
+    line-height: 1.125;
+    display: inline-block;
+    padding-top: 0.4375em;
+}
+
+.header__offer {
+	 font-size: 16px;
+}
+
+.offer {
+  font-size: 2.5rem;
+  font-family: "IBM Plex Sans Light";
+  letter-spacing: 2px;
+  color: rgb(255, 255, 255);
+  line-height: 0.45;
+  margin-top: 137px;
+}
+.offer_sum {
+  font-size: 5rem;
+  font-family: "IBM Plex Sans Bold";
+  color: rgb(80, 227, 194);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 5rem;
+  display: block; 
+  padding-top: 1.5625rem;
+  padding-bottom: 1.6875rem;  
+  letter-spacing: 0.25rem;
+}
+
+
+.project_author {  
     position: absolute;
-    top: 20px;
+    top: 1.25em;
     right: -18%;
     z-index: 1; 
     max-width: 120%; 
@@ -41,90 +119,14 @@
     display: none;
 }
 
-.wrapper {
-    width: 90vw;
-    max-width: 1100px;
-    height: 100%;
-    padding:0;
-    margin:0;
-    position: relative;
-    z-index: 12; 
-    margin:auto;
-    
-
-}
-
 .row_container{
-  max-width: 1100px;
+  width: 100%;
+  font-size: 16px;
   margin:auto; 
   position: relative;
-  z-index: 4;
+  z-index: 4; 
   
 }
-
-
-header {
-    padding-top: 83px;
-    position: relative;
-    z-index: 13;
-
-}
-
-.container { 
-  margin:auto;
-}
-
-.logo  {
-float: left;
-width: 97px;
-margin-right: 17px;
-
-
-}
-.fond_title {
-    text-transform: uppercase;
-    max-width: 70px;
-    font-size: 16px;
-    font-family: 'IBM Plex Sans';
-    text-align: left;
-    line-height: 1.125;
-    display: inline-block;
-    padding-top: 7px;
-}
-
-
-
-.offer {
-  font-size: 40px;
-  font-family: "IBM Plex Sans Light";
-  letter-spacing: 2px;
-  color: rgb(255, 255, 255);
-  line-height: 0.45;
-  margin-top: 137px;
-}
-.offer_sum {
-  font-size: 80px;
-  font-family: "IBM Plex Sans Bold";
-  color: rgb(80, 227, 194);
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 80px;
-  display: block; 
-  padding-top: 25px;
-  padding-bottom: 27px;  
-  letter-spacing: 4px;
-}
-
-@media screen and (max-width : 768px){
-.offer_sum {
-  font-size: 60px;
-}
-.offer {
-  font-size: 30px; 
-  line-height: 30px; 
-}
-}
-
 
 
 
@@ -133,7 +135,7 @@ margin-right: 17px;
   background-image: -webkit-linear-gradient( 42deg, rgb(36,195,159) 0%, rgb(53,214,178) 100%);
   background-image: -ms-linear-gradient( 42deg, rgb(36,195,159) 0%, rgb(53,214,178) 100%);
   box-shadow: 0px 19px 142px 0px rgba(0, 0, 0, 0.72);
-  font-size: 18px;
+  font-size: 1.125em;
   font-family: "IBM Plex Sans";
   color: rgb(255, 255, 255);
   font-weight: bold;
@@ -146,10 +148,9 @@ margin-right: 17px;
   text-transform: uppercase; 
   display: block;
   text-decoration: none;
-  margin-top: 90px; 
+  margin-top: 5.625em; 
   letter-spacing: 1.5px;
-  /*transition-property: all;
-  transition: .4s;*/
+ 
   
   }
 .get_offer:hover{
@@ -161,31 +162,17 @@ margin-right: 17px;
 }
 .icon_ball {
     display: inline-block;
-    max-height: 29px;
-    margin-right: 21px;
+    max-height: 1.8125em;
+    margin-right: 1.3125em;
 }
 
-.main_content {
-  /*max-width: 1170px; 
-  height: 100%;*/
-  position: relative;
-  z-index: 4;
-  /*background-color: red;*/
-   
-}
-.content_block
- {
-  width: 33%;
-  float: left;
-  max-width: 366px!important;
-  max-height: 365px!important;
-}
+
 .video_block {
     background-color: rgba(0, 0, 0, 0.302);
-    min-width: 380px;
+   /* min-width: 380px;*/
     width: 66%;
-    height: 366px;
-    border: 1px solid rgb(80, 227, 194);
+    height: 22.875em;
+    border: 0.0625em solid rgb(80, 227, 194);
     display: block;
     margin-left: 33%;
     display: flex;
@@ -199,7 +186,7 @@ margin-right: 17px;
 }
 
 .video_block__title {
-  font-size: 40px;
+  font-size: 2.5em;
   font-family: "IBM Plex Sans Light";
   color: rgb(255, 255, 255);
   line-height: 1.25;
@@ -210,7 +197,6 @@ margin-right: 17px;
    
 }
 #video {
- /* display: none;*/
   width: 100%; 
   min-height: 320px;  
   margin:auto;
@@ -240,44 +226,27 @@ opacity: 0.71;
      -o-transform: scale(1.1);
         transform: scale(1.1);
 }
-.overlay {
-  
-    background: rgba(0, 0, 0, 0.2) repeat-y;
-    bottom: 0;
-    left: 0;
-    position: fixed;
-    display: none;
-    right: 0;
-    top: 0;
-    z-index: 3;   
-    height: 100%;
-    min-height:100%;
-    width: 100%
-}
-  
 
 
 
-    </style>
+
+</style>
     <!-- Style -->
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">    
+    <link href="css/animate.css" rel="stylesheet">   
+    <link href="css/responsive.css" rel="stylesheet">  
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
 	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-	<![endif]-->
-   
+	<![endif]-->   
 </head>
-
-<body>
- 
+<body> 
 <div class="wrapper">
 <div class="overlay"></div>
-<img class="project_author" src="images/Nikita.png" alt="Никита Конев">
+<img class="project_author" src="images/Nikita3.png" alt="Никита Конев">
 <img class="project_authormobile" src="images/mobile.png" alt="Никита Конев">
-
 <header>      
  <div class="header">
         <img class="logo" src="images/logo.png" alt="Логотип">
@@ -298,23 +267,23 @@ opacity: 0.71;
                 </div>
          </div>
    </div>
- <div class="row_container">
+   <div class="row_container">
             <div class="content_block out_white wow slideInLeft" data-wow-duration="2s">
                 <div class="out_text title">                      
                     <p class="out_interest_black wow pulse"  data-wow-iteration="2" data-wow-duration="3000ms">Мне <span class="red">не</span> интересны:</p>
-                </div> 
-            </div>
-            <div class="content_block black wow slideInRight" data-wow-duration="2s">
-               <div class="out_text directions">
-                          
-               <object class="svg_icons wow flash" data-wow-delay="3s" data-wow-duration="1s"  data-wow-iteration="1" name="graph" type="image/svg+xml" data="images/bitcoin.svg" width="150" height="150"></object>
-               <div class="cross wow rollIn " data-wow-duration="2s" data-wow-delay="2s" data-wow-iteration="1">
-                    <div class="x"></div>
                 </div>
-               <p class="out_interest_white">ICO</p>
-            </div>
-            </div>        
-            <div class="content_block black_hell wow slideInRight" data-wow-duration="2s" data-wow-delay="1s">
+            </div>    
+
+             <div class="content_block black wow slideInRight" data-wow-duration="2s">
+               <div class="out_text directions">                          
+                  <object class="svg_icons wow flash" data-wow-delay="3s" data-wow-duration="1s"  data-wow-iteration="1" name="graph" type="image/svg+xml" data="images/bitcoin.svg" width="150" height="150"></object>
+                   <div class="cross wow rollIn " data-wow-duration="2s" data-wow-delay="2s" data-wow-iteration="1">
+                      <div class="x"></div>
+                    </div>
+                  <p class="out_interest_white">ICO</p>
+                </div>
+           </div>     
+           <div class="content_block black_hell wow slideInRight" data-wow-duration="2s" data-wow-delay="1s">
                <div class="out_text directions">               
                 <object class="svg_icons wow flash" data-wow-delay="3s" data-wow-duration="1s"  data-wow-iteration="1" name="graph" type="image/svg+xml" data="images/tender.svg" width="150" height="150"></object> 
                 <div class="cross wow rollIn " data-wow-duration="2s" data-wow-delay="2s" data-wow-iteration="1" >
@@ -322,9 +291,9 @@ opacity: 0.71;
                  </div>
                 <p class="out_interest_white">Тендеры</p> 
             </div>
-        </div>
- </div>
-<div class="row_container">
+ </div> 
+
+ <div class="row_container">
             <div class="content_block empty">               
             </div>
             <div class="content_block black_hell wow slideInRight" data-wow-duration="2s">
@@ -383,13 +352,12 @@ opacity: 0.71;
         </div>    
     </div>
 </div>
-</div>
+
 <div class="clearfix"></div>
-<section id="form" class="row_container ">
-  
+<section id="form" class="row_container">  
     <h2 class="form_title">Расскажите о своём проекте</h2>                
      <form id="msform" action="mail.php" method="POST" enctype="multipart/form-data">    
-    <fieldset class="double_section">
+    <fieldset class="double_section question">
       <div class="first_part">
         <h3 class="fs-title">Ёмко опишите Ваш стартап</h3>
         <textarea name="startup" placeholder="Что за продукт? Какую проблему решает? В чем его конкурентные преимущества?"></textarea>
@@ -415,17 +383,17 @@ opacity: 0.71;
         <input type="text" id="filename_presentation" class="filename" disabled>
         <input type="text" id="filename_plan" class="filename" disabled>
          </div>      
-        <a class="next action-button"> Далее<img class="button_icon" src="images/button_arrow.png" alt="Иконка"></a>
+        <!-- <a class="next action-button"> Далее<img class="button_icon" src="images/button_arrow.png" alt="Иконка"></a> -->
     </fieldset>
     <fieldset>        
         <h3 class="fs-title">Сколько вам нужно денег? На что они пойдут?</h3>
         <textarea name="user_budget" placeholder="Четко, без общих фраз типа: на 'маркетинг' или 'масштабирование'"></textarea>      
-        <a class="next action-button"> Далее<img class="button_icon" src="images/button_arrow.png" alt="Иконка"></a>
+        <!-- <a class="next action-button"> Далее<img class="button_icon" src="images/button_arrow.png" alt="Иконка"></a> -->
     </fieldset>
     <fieldset>        
         <h3 class="fs-title">Сколько мы с вами сможем заработать?</h3>
         <textarea name="user_profit" placeholder="Сколько и на чем мы заработаем? Как прикинули эту сумму? Что для этого должно произойти?" ></textarea>       
-        <a class="next action-button"> Далее<img class="button_icon" src="images/button_arrow.png" alt="Иконка"></a>   
+        
     </fieldset>
     <fieldset class="user_info">
        <h3 class="fs-title">Заполните контактную информацию</h3>
@@ -438,28 +406,34 @@ opacity: 0.71;
         <input class="compulsory compulsory2" type="tel" name="user_phone" placeholder="Телефон" required="required"/>
         <input class="compulsory compulsory2" type="email" name="user_email" placeholder="E-mail" required="required"/> 
     </div>
-    <button id="send" type="submit" class="action-button"> Отправить</button>    
+    
     </fieldset>
-    <ul id="progressbar">
+    <div class="button_block">
+     <a class="next action-button"> Далее<img class="button_icon" src="images/button_arrow.png" alt="Иконка"></a> 
+      <button id="send" type="submit" class="action-button"> Отправить</button>    
+       <ul id="progressbar">
         <li class="active"></li>
         <li></li>
         <li></li>
         <li></li>
-    </ul>
-</form>   
-<!-- </div> -->
+       </ul>
+   </div>
 
-</section>
+</form> 
 <div id="letter_sent">
        <div class="letter_sent__content">
        <object class="svg_sent" name="graph" type="image/svg+xml" data="images/sent_icon.svg" width="150" height="150"></object>        
         <h3 class="letter">Ваш запрос отправлен</h3>
         <h4 class="letter smaller_text">Мы свяжемся с вами как только будем готовы обсудить детали и условия.</h4>
     </div>
-</div>
+</div>   
+ </div> 
+
+</section>
+
 </div><!--end wrapper-->
-<footer class="footer">        
-        <div class="container footer_content">          
+ <footer class="footer">        
+        <div class="footer_content">          
                 <p class="copyright">&copy; 2018 Фонд Никиты Конева. All rights reserved. </p>               
                 <div class="social_iconsBlock">
                     <a href="https://www.facebook.com/nikita.konev.50" target="_blank" ><img class="social_icon" src="images/facebook.jpg" alt="Facebook"></a>
@@ -467,19 +441,20 @@ opacity: 0.71;
                      <a href="https://www.instagram.com/nikitakonev1/" target="_blank" ><img class="social_icon" src="images/instagram.jpg" alt="Инстаграм"></a>
                 </div>           
             </div>        
-</footer>
+</footer> 
 <!-- END FOOTER -->
-<div id="blindLayer"></div>
-<!-- Попап заказа обратного звонка  и прайс-листа-->
+
+<!-- Попап видео-->
+<!-- <div id="blindLayer"></div>
  <div id="popup1" class= "popup" > 
   <a href="javascript:PopUpHide()">
   <p  class="close1"></p> </a>
   <form id="back_call_popup">
     <video id="video" controls="controls">
-        <source src="invest.mp4" type="video/mp4">                      
+        <source src="" type="video/mp4">                      
     </video>   
   </form>
-</div>
+</div> -->
 <script src='js/jquery.js'></script>
 <script src='js/ease.js' ></script>    
 <script src='js/wow.min.js' ></script>
@@ -492,6 +467,14 @@ if ($('.wow').hasClass('animated')) {
 }
 </script>
 <script src='js/index.js' defer></script>
+<script>
+$('#msform').on('submit', function(event) { 
+$('#progressbar').hide('slow');
+$('#msform').css('display', 'none');
+$('#letter_sent').fadeIn('fast');
+                                 
+});
+</script>
 </body>
 </html>
 
