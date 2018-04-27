@@ -80,6 +80,11 @@ overflow-x: hidden;
     clear: both;
 }
 
+#previous {
+  display: none;
+  margin-right: 10px;
+}
+
 
 .out_text.directions {  
   position: relative;
@@ -92,11 +97,15 @@ overflow-x: hidden;
 .content_block.black {
    color: #fff; 
    background-color: rgba(0, 0, 0, 0.6);
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
 }
 .content_block.black_hell {
   background-color: rgba(0, 0, 0, 0.4);
   color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;  
 }
 .out_text.directions { 
@@ -159,9 +168,10 @@ overflow-x: hidden;
  
 .content_block.green {
   background-color: rgb(36,195,159);
-  background-image: -moz-linear-gradient( 42deg, rgb(36,195,159) 0%, rgb(53,214,178) 100%);
   background-image: -webkit-linear-gradient( 42deg, rgb(36,195,159) 0%, rgb(53,214,178) 100%);
   background-image: -ms-linear-gradient( 42deg, rgb(36,195,159) 0%, rgb(53,214,178) 100%);
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex; 
 }
 
@@ -169,7 +179,8 @@ overflow-x: hidden;
 .content_block.white{
  
  background-size: cover;
- box-sizing: border-box;
+ -webkit-box-sizing: border-box;
+         box-sizing: border-box;
  background-position: center;
  background-repeat: no-repeat;
   
@@ -177,8 +188,7 @@ overflow-x: hidden;
   font-family: "IBM Plex Sans";
   color: rgb(37, 37, 37);
   padding-right: 3%;
-  /*padding-top: 5%;
-  padding-left: 4%;*/
+ 
    padding-top: 2.375rem;
    padding-left: 3.375rem;
   
@@ -213,10 +223,10 @@ overflow-x: hidden;
 }
 
 .galka {
-  background-image: -moz-linear-gradient( 42deg, rgb(36,195,159) 0%, rgb(53,214,178) 100%);
   background-image: -webkit-linear-gradient( 42deg, rgb(36,195,159) 0%, rgb(53,214,178) 100%);
   background-image: -ms-linear-gradient( 42deg, rgb(36,195,159) 0%, rgb(53,214,178) 100%);
-  box-shadow: 0px 19px 142px 0px rgba(0, 0, 0, 0.72);
+  -webkit-box-shadow: 0px 19px 142px 0px rgba(0, 0, 0, 0.72);
+          box-shadow: 0px 19px 142px 0px rgba(0, 0, 0, 0.72);
   
 }
 .content_block {
@@ -254,11 +264,15 @@ overflow-x: hidden;
 }
 
 .x::before {
-  transform: rotate(45deg) translate(-55px, 0);
+  -webkit-transform: rotate(45deg) translate(-55px, 0);
+      -ms-transform: rotate(45deg) translate(-55px, 0);
+          transform: rotate(45deg) translate(-55px, 0);
 }
 
 .x::after {
-  transform: rotate(-45deg) translate(-55px, 0);
+  -webkit-transform: rotate(-45deg) translate(-55px, 0);
+      -ms-transform: rotate(-45deg) translate(-55px, 0);
+          transform: rotate(-45deg) translate(-55px, 0);
 }
 
 #msform {
@@ -269,11 +283,14 @@ overflow-x: hidden;
     background-color: #000;
     min-height: 9.375rem;
     line-height: 9.375rem;
-    border-bottom: 1px solid #fff;
+   
     position: relative;
     z-index: 33;
    
     margin:auto;
+   
+    bottom: 0;
+    
     }
     .footer_content{
      width: 80vw;
@@ -294,7 +311,7 @@ div.social_iconsBlock {
     display: inline-block;
     float: right;
     margin-right:  0.9375rem;
-    padding-bottom: 0.8125rem;
+    /*padding-bottom: 0.8125rem;*/
 }
 
 div.social_iconsBlock a {    
@@ -305,7 +322,11 @@ div.social_iconsBlock a {
 img.social_icon {
     display: inline-block;
     height: 3.125rem;
+    -webkit-transition-property: all;
+    -o-transition-property: all;
     transition-property: all;
+    -webkit-transition: .4s;
+    -o-transition: .4s;
     transition: .4s;
     border: 1px solid #3a5a84;
 }
@@ -313,9 +334,7 @@ img.social_icon {
 img.social_icon:hover{
 opacity: 0.8;
 -webkit-transform: scale(1.4);
-   -moz-transform: scale(1.4);
     -ms-transform: scale(1.4);
-     -o-transform: scale(1.4);
         transform: scale(1.4);
 }
  
@@ -359,7 +378,8 @@ opacity: 0.8;
     border: 0 none;
     border-radius: 3px;   
     padding: 0px;    
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;    
+            box-sizing: border-box;
     min-width: 100%; 
     position: relative;
     display: none;
@@ -375,7 +395,8 @@ opacity: 0.8;
     border-radius: 3px;
     margin-bottom: 10px;
     width: 100%;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-family: "IBM Plex Sans Italic";
     color: #2C3E50;
     font-size: 14px;
@@ -390,26 +411,36 @@ opacity: 0.8;
   font-family:'IBM Plex Sans Medium';
      font-size: 0.875rem;
      display: block;
-     text-align: left;
+   float: left;
+   text-align: left;
+  
+   
+}
+
+.team_container {
+  width: 100%;
+  height: 3.75rem;
+  margin-bottom: 1.25rem;
+ 
+  position: relative;
 }
 
 #msform .action-button {
     width: 20.6875rem;
-  height: 5em;
+  height: 5rem;
   background-color:  rgb(36,195,159);
-   background-image: -moz-linear-gradient( 42deg, rgb(36,195,159) 0%, rgb(53,214,178) 100%);
   background-image: -webkit-linear-gradient( 42deg, rgb(36,195,159) 0%, rgb(53,214,178) 100%);
   background-image: -ms-linear-gradient( 42deg, rgb(36,195,159) 0%, rgb(53,214,178) 100%);
-  box-shadow: 0px 19px 142px 0px rgba(0, 0, 0, 0.72);    
+    
     color: #fff;
     border:none;
     outline: none;
     font-family:'IBM Plex Sans Bold';
     text-transform: uppercase;
-    font-size: 18px;
-    line-height: 80px;
+    font-size: 1.125rem;
+    line-height: 5rem;
     cursor: pointer;
-  /*  margin-top: 43px;*/
+ 
     float: right; 
 }
 textarea {
@@ -420,22 +451,21 @@ textarea {
      display: inline-block;
       padding-left: 0px;
       padding-right: 0.625rem;
-      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
       float: left;
-      /*min-height: 380px;*/
-      
+    
 }
 .second_part {
     width: 35%;   
     float: left;
     padding-left: 0.625rem;
     padding-right: 0px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     float: left;   
     display: block;
-    /*min-height: 400px;*/
-    /*margin-bottom: 43px;*/
-
+    
 }
 .file-upload {
   display: inline-block;
@@ -445,7 +475,8 @@ textarea {
 }
 
 #msform .action-button:hover, #msform .action-button:focus {
-    box-shadow: 0 0 0 2px rgba(80, 227, 194, 0.8);   
+    -webkit-box-shadow: 0 0 0 2px rgba(80, 227, 194, 0.8);
+            box-shadow: 0 0 0 2px rgba(80, 227, 194, 0.8);   
     background-image: none;
     background-color:rgba(80, 227, 194);
 }
@@ -464,8 +495,9 @@ textarea {
 
 .button_block {
   
-  min-height: 18.75rem;
+  min-height: 20rem;
   padding-top: 2.4375rem;
+  position: relative;
 }
 
 
@@ -473,13 +505,8 @@ textarea {
     overflow: hidden;    
     counter-reset: step;
     max-width: 27.5rem;   
-    /*padding-bottom: 115px;*/
-   /* position: relative; 
-    display: inline-block;*/
+   position:relative;
 
-
-position:relative;
-/*left:-50%;*/
 float:left;
 margin:0 10px;
 height:5rem;    
@@ -568,8 +595,8 @@ padding:0 0.9375rem;
 }
 
 .file-upload {
-     position: relative; /* Даем возможность делать позиционирование, внутри данного элемента */
-     overflow: hidden; /* Все что выходит за пределы - скрываем */
+     position: relative; 
+     overflow: hidden; 
      width: 46%;
      height: 2.5rem;
      line-height: 2.5rem;
@@ -585,10 +612,10 @@ padding:0 0.9375rem;
      background: #ddd;
 }
 .file-upload input[type="file"]{
-    display: none; /* Обязательно скрываем настоящий Input File */
+    display: none; 
 }
 .file-upload label {
-     /* Растягиваем label на всю возможную площадь блока .file-upload */
+     
      display: block;
      position: absolute;
      top: 0;
@@ -603,11 +630,10 @@ padding:0 0.9375rem;
      line-height: 3.75rem; 
      font-family:'IBM Plex Sans Medium';
      font-size: 0.875rem;
-     display: block;
-     background-color: #fff;
+    
 
 
-     /* Делаем вертикальное выравнивание текста, который написан на кнопке */
+     
 }
 
 .upload_icon {
@@ -622,10 +648,22 @@ padding:0 0.9375rem;
   margin-left: 3.4375rem;
 }
 
+.button_icon2 {
+width: 1.25em;
+  display: inline-block;
+  margin-right: 3.4375rem;
+}
+
+
+
 #user_block, .contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 1.8125rem;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   
   
 }
@@ -646,23 +684,47 @@ padding:0 0.9375rem;
  
 }
 
+#msform input.team_amount {
+    font-size: 1.1rem;
+    color: #000;
+    min-height: 4rem;
+}
+
 #msform #send {
   position: relative;
   display: none;
 
 }
 
+
+
+
 #letter_sent {
   margin:auto;
-  height: 31.75rem; 
-  background-image: -moz-linear-gradient( 42deg, rgb(36,195,159) 0%, rgb(53,214,178) 100%);
+  height: 31.75rem;
+  width: 80vw;
+  background-color: rgb(36,195,159);
   background-image: -webkit-linear-gradient( 42deg, rgb(36,195,159) 0%, rgb(53,214,178) 100%);
   background-image: -ms-linear-gradient( 42deg, rgb(36,195,159) 0%, rgb(53,214,178) 100%);
-  box-shadow: 0px 19px 142px 0px rgba(0, 0, 0, 0.72);
-  padding-top: 5rem;
-  padding-bottom: 4rem;
-  margin-bottom: 1.25rem;
-  display: none;
+  -webkit-box-shadow: 0px 19px 142px 0px rgba(0, 0, 0, 0.72);
+          box-shadow: 0px 19px 142px 0px rgba(0, 0, 0, 0.72);
+  /*background: none repeat scroll 0 0 #fff;*/
+    /*border: 1px solid #808040;*/
+    left: 50%;
+    margin-left: -40vw;
+    padding: 1.5625rem 1.25rem;
+    position: fixed;
+    top: 5rem;
+    
+    min-height: 320px;
+    z-index: 207;
+    display: none;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+    margin-bottom: 1.25rem;
+  
+  
+ 
  
 }
 
@@ -674,6 +736,8 @@ padding:0 0.9375rem;
   line-height: 2.625rem;
   margin-top: 2.1875rem;
   text-align: center;
+  position: relative;
+  z-index: 
 }
 
 .letter.smaller_text {
@@ -708,10 +772,14 @@ padding:0 0.9375rem;
 }
 .out_text.title {
   width: 100%;  
+  display: -webkit-box;  
+  display: -ms-flexbox;  
   display: flex;
 }
 .acceptable_text.title{
  width: 100%;  
+  display: -webkit-box;  
+  display: -ms-flexbox;  
   display: flex;
   
   height: 100%;
@@ -721,15 +789,176 @@ padding:0 0.9375rem;
     width: 95%;
 }
 .content_block.white {    
-    max-width: 100%;
+    max-width: 100%;  
+}
+
+input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.number-input {
+    display: block;
+    /*max-width: 8.0625rem;*/
+    position: relative;
+}
+
+.number-input,
+.number-input * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;    
+    position: relative;
+}
+
+button.team_select {
+    display: inline-block;
+    border: none;
+    outline: none;   
+    position: absolute;
+    z-index: 195;   
+    cursor: pointer;
+    height: 0.9375rem;
+    width: 0.9375rem;
+    background-color: transparent;
+    border:none;
+    
+}
+button.team_select.up {
+  background-image: url(../images/up.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+    display: inline-block;
+    border: none;
+    outline: none;
+    position: absolute;
+    z-index: 195;
+    top: 0.9375rem;
+    right: 0.625rem;
+    cursor: pointer;
+       
+}
+
+button.team_select.down {
+  background-image: url(../images/down.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+    position: absolute;
+     z-index: 195;
+    bottom: 0.9375rem;
+    right: 0.625rem;
    
 }
 
+.number-input input[type=number] {
+    font-family: sans-serif;
+    max-width: 5rem;
+    padding: .5rem;
+    border-width: 0 2px;
+    font-size: 2rem;
+    height: 3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.popup {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #ddd;
+    left: 50%;
+    margin-left: -25vw;
+    padding: 1.5625rem 1.25rem;
+    position: fixed;
+    top: 5rem;
+    width: 50vw;
+    max-width: 50rem;
+    height: auto;
+    z-index: 200;
+    display: none;
+}
+#blindLayer {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.8);
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 199;
+    display: none;
+    height: 100%;
+    width: 100%
+}
+
+.close1 {
+    background: url('../images/close2.png') no-repeat 0px 0px;
+    color:#333;
+    background-size: contain;
+    cursor: pointer;
+    width: 0.9375rem;
+    height: 0.9375rem;
+    position: absolute;
+    text-align: center;
+    right: 0.3125rem;
+    top: -0.4375rem;
+    cursor: pointer;
+    -webkit-transition: color 0.2s ease-in-out;
+    -moz-transition: color 0.2s ease-in-out;
+    -o-transition: color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out;
+    z-index: 201;
+}
+
+.close1:hover{
+  opacity: 0.8;
+}
 
 
+#close {
+  background-image: url(../images/close.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; 
+  position: absolute;
+  top: -3.4375rem;
+  right: 1.5625rem;
+  width: 1.875rem;
+  height: 1.875rem;  
+  z-index: 205;
+}
 
+#close:hover{
+  opacity: 0.8;
+}
 
+@media screen and (max-width : 767px){
+#close {    
+  position: absolute;
+  top: -35px;
+  right: 15px;
+  width: 25px;
+  height: 25px;
+}
+.popup {    
+    width: 80vw;
+    left: 50%;
+    margin-left: -40vw;
+    padding: 20px 15px;
+    position: fixed;
+    top: 2.5rem;
+}
+}
+.letter_sent__content {
+  position: relative;
+  z-index: 203;
+}
 
-
-
-
+.player.vp-title {
+display: none!important;
+}

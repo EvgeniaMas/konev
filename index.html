@@ -9,227 +9,200 @@
     <meta content="Инвестиции в проект, фонд Никиты Конева, выгодные инвестиции 1 000 000 долларов" name="keywords">
     <link rel="shortcut icon" type="image/x-icon" href="logo.png" />   
     <link href="css/normalize.css" rel="stylesheet">    
-   <!--  <link href="css/grid.css" rel="stylesheet"> -->
+  
     <!-- Favicon -->
     <style>
-    html{
-    	font-size: 16px;
-    }
-    body{  
-    min-width: 320px;
-    height: 100%;
-    padding: 0;
-    line-height: 1.5em;
-    color: #fff;
-    background-image: url(images/noise.jpg);
-    background-position: center top;
-    background-size: cover;
-    background-repeat: no-repeat;    
-    
+html{
+font-size: 16px;
+margin-bottom: 0;
+padding-bottom: 0;
 }
-   .wrapper {
-    width: 80vw;
-    max-width: 1100px;
-    max-width:  68.75rem;
-    min-height: 100%;
-    height: 100%;
-    padding:0;    
-    position: relative;
-    z-index: 12; 
-    margin:auto;
-    margin-bottom: -9.375rem;
-       
+body{  
+min-width: 320px;
+height: 100%;
+padding: 0;
+line-height: 1.5em;
+color: #fff;
+background-image: url(images/noise.jpg);
+background-position: center top;
+background-size: cover;
+background-repeat: no-repeat;    
+margin-bottom: 0;
+padding-bottom: 0;
+}
+.wrapper {
+width: 80vw;   
+max-width: 1100px;
+max-width:  68.75rem;
+min-height: 100%;
+height: 100%;
+padding:0;    
+position: relative;
+z-index: 12; 
+margin:auto;
+margin-bottom: -9.375rem;       
 }
 .overlay {
-  
-    background: rgba(0, 0, 0, 0.2) repeat-y;
-    bottom: 0;
-    left: 0;
-    position: fixed;
-    display: none;
-    right: 0;
-    top: 0;
-    z-index: 3;   
-    height: 100%;
-    min-height:100%;
-    width: 100%
+background: rgba(0, 0, 0, 0.2) repeat-y;
+bottom: 0;
+left: 0;
+position: fixed;
+display: none;
+right: 0;
+top: 0;
+z-index: 3;   
+height: 100%;
+min-height:100%;
+width: 100%;
+margin-bottom: -150px;
 }
 /*Шапка*/
 header {
-    padding-top: 5.1875rem;
-    position: relative;
-    z-index: 13;
-    font-size: 16px;
+padding-top: 5.1875rem;
+position: relative;
+z-index: 13;
+font-size: 16px;
 }
-
 .logo  {
 float: left;
 width: 6.0625em;
 margin-right: 1.0625em;
 }
-
-
-
 .fond_title {
-    text-transform: uppercase;
-    max-width:  4.375em;
-    font-size: 1em;
-    font-family: 'IBM Plex Sans';
-    text-align: left;
-    line-height: 1.125;
-    display: inline-block;
-    padding-top: 0.4375em;
+text-transform: uppercase;
+max-width:  4.375em;
+font-size: 1em;
+font-family: 'IBM Plex Sans';
+text-align: left;
+line-height: 1.125;
+display: inline-block;
+padding-top: 0.4375em;
 }
-
 .header__offer {
-	 font-size: 16px;
+font-size: 16px;
 }
-
 .offer {
-  font-size: 2.5rem;
-  font-family: "IBM Plex Sans Light";
-  letter-spacing: 2px;
-  color: rgb(255, 255, 255);
-  line-height: 0.45;
-  margin-top: 137px;
+font-size: 2.5rem;
+font-family: "IBM Plex Sans Light";
+letter-spacing: 2px;
+color: rgb(255, 255, 255);
+line-height: 0.45;
+margin-top: 137px;
 }
 .offer_sum {
-  font-size: 5rem;
-  font-family: "IBM Plex Sans Bold";
-  color: rgb(80, 227, 194);
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 5rem;
-  display: block; 
-  padding-top: 1.5625rem;
-  padding-bottom: 1.6875rem;  
-  letter-spacing: 0.25rem;
+font-size: 5rem;
+font-family: "IBM Plex Sans Bold";
+color: rgb(80, 227, 194);
+font-weight: bold;
+text-transform: uppercase;
+line-height: 5rem;
+display: block; 
+padding-top: 1.5625rem;
+padding-bottom: 1.6875rem;  
+letter-spacing: 0.25rem;
 }
-
-
 .project_author {  
-    position: absolute;
-    top: 1.25em;
-    right: -18%;
-    z-index: 1; 
-    max-width: 120%; 
+position: absolute;
+top: 1.25em;
+right: -18%;
+z-index: 1; 
+max-width: 120%; 
 }
-
 .project_authormobile {
-    display: none;
+display: none;
 }
-
 .row_container{
-  width: 100%;
-  font-size: 16px;
-  margin:auto; 
-  position: relative;
-  z-index: 4; 
-  
+width: 100%;
+font-size: 16px;
+margin:auto; 
+position: relative;
+z-index: 4; 
 }
-
-
-
 .get_offer {
-  background-image: -moz-linear-gradient( 42deg, rgb(36,195,159) 0%, rgb(53,214,178) 100%);
-  background-image: -webkit-linear-gradient( 42deg, rgb(36,195,159) 0%, rgb(53,214,178) 100%);
-  background-image: -ms-linear-gradient( 42deg, rgb(36,195,159) 0%, rgb(53,214,178) 100%);
-  box-shadow: 0px 19px 142px 0px rgba(0, 0, 0, 0.72);
-  font-size: 1.125em;
-  font-family: "IBM Plex Sans";
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  line-height: 1;
-  text-align: center; 
-  width: 33%;
-  max-width: 400px;
-  height: 79px;
-  line-height: 79px;
-  text-transform: uppercase; 
-  display: block;
-  text-decoration: none;
-  margin-top: 5.625em; 
-  letter-spacing: 1.5px;
- 
-  
-  }
+background-color: rgb(36,195,159);
+background-image: -moz-linear-gradient( 42deg, rgb(36,195,159) 0%, rgb(53,214,178) 100%);
+background-image: -webkit-linear-gradient( 42deg, rgb(36,195,159) 0%, rgb(53,214,178) 100%);
+background-image: -ms-linear-gradient( 42deg, rgb(36,195,159) 0%, rgb(53,214,178) 100%);
+box-shadow: 0px 19px 142px 0px rgba(0, 0, 0, 0.72);
+font-size: 1.125em;
+font-family: "IBM Plex Sans";
+color: rgb(255, 255, 255);
+font-weight: bold;
+line-height: 1;
+text-align: center; 
+width: 33%;
+max-width: 400px;
+height: 79px;
+line-height: 79px;
+text-transform: uppercase; 
+display: block;
+text-decoration: none;
+margin-top: 5.625em; 
+letter-spacing: 1.5px;
+}
 .get_offer:hover{
- 
- background-image: none;
- background-color:rgba(80, 227, 194);
- box-shadow: 0 0 0 2px rgba(80, 227, 194, 0.8);
- 
+background-image: none;
+background-color:rgba(80, 227, 194);
+box-shadow: 0 0 0 2px rgba(80, 227, 194, 0.8);
 }
 .icon_ball {
-    display: inline-block;
-    max-height: 1.8125em;
-    margin-right: 1.3125em;
+display: inline-block;
+max-height: 1.8125em;
+margin-right: 1.3125em;
 }
-
-
 .video_block {
-    background-color: rgba(0, 0, 0, 0.302);
-   /* min-width: 380px;*/
-    width: 66%;
-    height: 22.875em;
-    border: 0.0625em solid rgb(80, 227, 194);
-    display: block;
-    margin-left: 33%;
-    display: flex;
-    padding-left: 3%;
-    box-sizing: border-box;
-
+background-color: rgba(0, 0, 0, 0.302);
+width: 66%;
+height: 22.875em;
+border: 0.0625em solid rgb(80, 227, 194);
+display: block;
+margin-left: 33%;
+display: flex;
+padding-left: 3%;
+box-sizing: border-box;
 }
 .video_block__content {
-  margin:auto;
-  width: 64%;
+margin:auto;
+width: 64%;
 }
-
 .video_block__title {
-  font-size: 2.5em;
-  font-family: "IBM Plex Sans Light";
-  color: rgb(255, 255, 255);
-  line-height: 1.25;
-  padding-left: 46px;
-  text-align: center;
-  display: inline-block;
-  width: 70%;
-   
+font-size: 2.5em;
+font-family: "IBM Plex Sans Light";
+color: rgb(255, 255, 255);
+line-height: 1.25;
+padding-left: 46px;
+text-align: center;
+display: inline-block;
+width: 70%;
 }
 #video {
-  width: 100%; 
-  min-height: 320px;  
-  margin:auto;
-}
+width: 100%; 
+margin:auto;
 
+}
 #turnOn_video
- {
-  background: url('images/arrow.png') no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 99px;
-  height: 99px;
-  outline: none;
-  border:none;
-  transition-property: all;
-  transition: .4s;
-  display: inline-block;
-  margin:auto;
-  padding-left: 10px;
+{
+background: url('images/arrow.png') no-repeat;
+background-position: center;
+background-size: cover;
+width: 99px;
+height: 99px;
+outline: none;
+border:none;
+transition-property: all;
+transition: .4s;
+display: inline-block;
+margin:auto;
+padding-left: 10px;
 }
-
 #turnOn_video:active, #turnOn_video:hover {
 opacity: 0.71;
 -webkit-transform: scale(1.1);
-   -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-     -o-transform: scale(1.1);
-        transform: scale(1.1);
+-moz-transform: scale(1.1);
+-ms-transform: scale(1.1);
+-o-transform: scale(1.1);
+transform: scale(1.1);
 }
-
-
-
-
 </style>
     <!-- Style -->
     <link href="css/style.css" rel="stylesheet">
@@ -262,30 +235,30 @@ opacity: 0.71;
         <a href="#form" class="get_offer"><img class="icon_ball" src="images/ball.png" alt="Иконка">Подать заявку</a> 
             <div class="video_block">                
                 <div class="video_block__content">
-                  <!--  <button onclick="PopUpShow()" id="turnOn_video"></button> -->
+                   <button onclick="PopUpShow()" id="turnOn_video"></button>
                     <p class="video_block__title">Как получить инвестиции?</p>
                 </div>
          </div>
    </div>
    <div class="row_container">
-            <div class="content_block out_white wow slideInLeft" data-wow-duration="2s">
+            <div class="content_block out_white wow slideInLeft" data-wow-duration="1s">
                 <div class="out_text title">                      
                     <p class="out_interest_black wow pulse"  data-wow-iteration="2" data-wow-duration="3000ms">Мне <span class="red">не</span> интересны:</p>
                 </div>
             </div>    
 
-             <div class="content_block black wow slideInRight" data-wow-duration="2s">
+             <div class="content_block black wow slideInRight" data-wow-duration="1s">
                <div class="out_text directions">                          
-                  <object class="svg_icons wow flash" data-wow-delay="3s" data-wow-duration="1s"  data-wow-iteration="1" name="graph" type="image/svg+xml" data="images/bitcoin.svg" width="150" height="150"></object>
+                  <object class="svg_icons wow flash" data-wow-delay="1s" data-wow-duration="1s"  data-wow-iteration="1" name="graph" type="image/svg+xml" data="images/bitcoin.svg" width="150" height="150"></object>
                    <div class="cross wow rollIn " data-wow-duration="2s" data-wow-delay="2s" data-wow-iteration="1">
                       <div class="x"></div>
                     </div>
                   <p class="out_interest_white">ICO</p>
                 </div>
            </div>     
-           <div class="content_block black_hell wow slideInRight" data-wow-duration="2s" data-wow-delay="1s">
+           <div class="content_block black_hell wow slideInRight" data-wow-duration="1s" data-wow-delay="1s">
                <div class="out_text directions">               
-                <object class="svg_icons wow flash" data-wow-delay="3s" data-wow-duration="1s"  data-wow-iteration="1" name="graph" type="image/svg+xml" data="images/tender.svg" width="150" height="150"></object> 
+                <object class="svg_icons wow flash" data-wow-delay="1s" data-wow-duration="1s"  data-wow-iteration="1" name="graph" type="image/svg+xml" data="images/tender.svg" width="150" height="150"></object> 
                 <div class="cross wow rollIn " data-wow-duration="2s" data-wow-delay="2s" data-wow-iteration="1" >
                     <div class="x"></div>
                  </div>
@@ -296,7 +269,7 @@ opacity: 0.71;
  <div class="row_container">
             <div class="content_block empty">               
             </div>
-            <div class="content_block black_hell wow slideInRight" data-wow-duration="2s">
+            <div class="content_block black_hell wow slideInRight" data-wow-duration="1s">
             <div class="out_text directions">               
                <object class="svg_icons wow flash" data-wow-delay="3s" data-wow-duration="1s"  data-wow-iteration="1" name="graph" type="image/svg+xml" data="images/build.svg" width="140" height="140"></object>
                 <div class="cross wow rollIn " data-wow-duration="2s" data-wow-delay="2s" data-wow-iteration="1">
@@ -305,7 +278,7 @@ opacity: 0.71;
                 <p class="out_interest_white">Строительство</p>   
             </div>
         </div>        
-            <div class="content_block black wow slideInRight" data-wow-duration="2s" data-wow-delay="1s">
+            <div class="content_block black wow slideInRight" data-wow-duration="1s" data-wow-delay="1s">
             <div class="out_text directions">                
                 <object class="svg_icons wow flash" data-wow-delay="3s" data-wow-duration="1s"  data-wow-iteration="1" name="graph" type="image/svg+xml" data="images/money_box.svg" width="150" height="150"></object>
                 <div class="cross wow rollIn" data-wow-duration="2s" data-wow-delay="2s" data-wow-iteration="1">
@@ -316,7 +289,7 @@ opacity: 0.71;
         </div>  
  </div>
 <div class="row_container">      
-            <div class="content_block green wow slideInLeft" data-wow-duration="2s">
+            <div class="content_block green wow slideInLeft" data-wow-duration="1s">
                    <p class="criterion wow pulse"  data-wow-iteration="2" data-wow-duration="3000ms">Критерии подходящего проекта:</p>
             </div>
             <div class="content_block block1 white wow slideInRight" data-wow-duration="1s">                       
@@ -360,14 +333,22 @@ opacity: 0.71;
     <fieldset class="double_section question">
       <div class="first_part">
         <h3 class="fs-title">Ёмко опишите Ваш стартап</h3>
-        <textarea name="startup" placeholder="Что за продукт? Какую проблему решает? В чем его конкурентные преимущества?"></textarea>
+        <textarea  name="startup" placeholder="Что за продукт? Какую проблему решает? В чем его конкурентные преимущества?" ></textarea>
         </div>
         <div class="second_part"> 
-        <h3 class="fs-title">У вас есть сайт/мобильное приложение?</h3>
-        <input class="product" type="text" name="site" placeholder="Ссылка на ваш продукт" />        
-        <h3 class="fs-title">Сколько человек в Вашей команде?</h3>        
-         <input class="team_amount" name="team" min="1" value="1" type="number">
-        <h3 class="fs-title">Загрузите презентацию и бизнесплан</h3>         
+        <h3 class="fs-title mobile">У вас есть сайт/мобильное приложение?</h3>
+        <input class="product " type="text" name="site" placeholder="Ссылка на ваш продукт" />        
+        <h3 class="fs-title mobile">Сколько человек в Вашей команде?</h3>
+        <div class="team_container">
+          <div class="number-input">  
+          <input class="team_amount" min="1" name="team" value="1" type="number"> 
+  
+           <button class="team_select up" onclick="this.parentNode.querySelector('input[type=number]').stepUp()" ></button>
+           <button class="team_select down" onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
+  </div>
+ </div>
+<div class="clearfix"></div>
+        <h3 class="fs-title mobile">Загрузите презентацию и бизнесплан</h3>         
           <div class="file-upload presentation">
             <label>
           <input type="file" name="presentation">
@@ -383,12 +364,12 @@ opacity: 0.71;
         <input type="text" id="filename_presentation" class="filename" disabled>
         <input type="text" id="filename_plan" class="filename" disabled>
          </div>      
-        <!-- <a class="next action-button"> Далее<img class="button_icon" src="images/button_arrow.png" alt="Иконка"></a> -->
+        
     </fieldset>
     <fieldset>        
         <h3 class="fs-title">Сколько вам нужно денег? На что они пойдут?</h3>
-        <textarea name="user_budget" placeholder="Четко, без общих фраз типа: на 'маркетинг' или 'масштабирование'"></textarea>      
-        <!-- <a class="next action-button"> Далее<img class="button_icon" src="images/button_arrow.png" alt="Иконка"></a> -->
+        <textarea  name="user_budget" placeholder="Четко, без общих фраз типа: на 'маркетинг' или 'масштабирование'" ></textarea>      
+       
     </fieldset>
     <fieldset>        
         <h3 class="fs-title">Сколько мы с вами сможем заработать?</h3>
@@ -409,8 +390,11 @@ opacity: 0.71;
     
     </fieldset>
     <div class="button_block">
+
      <a class="next action-button"> Далее<img class="button_icon" src="images/button_arrow.png" alt="Иконка"></a> 
-      <button id="send" type="submit" class="action-button"> Отправить</button>    
+     <button id="send" type="submit" class="action-button"> Отправить</button> 
+     <a id="previous" class=" action-button"> <img class="button_icon2" src="images/back_arrow.png" alt="Иконка">Назад</a>
+         
        <ul id="progressbar">
         <li class="active"></li>
         <li></li>
@@ -420,17 +404,17 @@ opacity: 0.71;
    </div>
 
 </form> 
+<div id="blindLayer"></div>
 <div id="letter_sent">
+	  
        <div class="letter_sent__content">
+         <div id="close"></div>
        <object class="svg_sent" name="graph" type="image/svg+xml" data="images/sent_icon.svg" width="150" height="150"></object>        
         <h3 class="letter">Ваш запрос отправлен</h3>
         <h4 class="letter smaller_text">Мы свяжемся с вами как только будем готовы обсудить детали и условия.</h4>
     </div>
 </div>   
- </div> 
-
 </section>
-
 </div><!--end wrapper-->
  <footer class="footer">        
         <div class="footer_content">          
@@ -443,18 +427,16 @@ opacity: 0.71;
             </div>        
 </footer> 
 <!-- END FOOTER -->
-
 <!-- Попап видео-->
-<!-- <div id="blindLayer"></div>
- <div id="popup1" class= "popup" > 
+
+<div id="popup1" class= "popup" > 
   <a href="javascript:PopUpHide()">
   <p  class="close1"></p> </a>
-  <form id="back_call_popup">
-    <video id="video" controls="controls">
-        <source src="" type="video/mp4">                      
-    </video>   
-  </form>
-</div> -->
+
+    <div style="padding:56.25% 0 0 0;position:relative;"><iframe id="video" src="" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+    <script src="https://player.vimeo.com/api/player.js" async></script>
+ 
+</div>
 <script src='js/jquery.js'></script>
 <script src='js/ease.js' ></script>    
 <script src='js/wow.min.js' ></script>
@@ -467,14 +449,6 @@ if ($('.wow').hasClass('animated')) {
 }
 </script>
 <script src='js/index.js' defer></script>
-<script>
-$('#msform').on('submit', function(event) { 
-$('#progressbar').hide('slow');
-$('#msform').css('display', 'none');
-$('#letter_sent').fadeIn('fast');
-                                 
-});
-</script>
 </body>
 </html>
 
