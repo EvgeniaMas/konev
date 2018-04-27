@@ -945,8 +945,10 @@ button.team_select.down {
   width: 25px;
   height: 25px;
 }
+
 .popup {    
     width: 80vw;
+    top: 3rem;
     left: 50%;
     margin-left: -40vw;
     padding: 20px 15px;
