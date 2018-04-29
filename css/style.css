@@ -282,7 +282,7 @@ overflow-x: hidden;
 .footer {
     background-color: #000;
     min-height: 9.375rem;
-    line-height: 9.375rem;
+    /*line-height: 9.375rem;*/
    
     position: relative;
     z-index: 33;
@@ -296,6 +296,8 @@ overflow-x: hidden;
      width: 80vw;
      max-width: 1100px;
      margin:auto;
+     position: relative;
+     padding-top: 20px;
         
     }
 
@@ -961,6 +963,67 @@ button.team_select.down {
   z-index: 203;
 }
 
-.player.vp-title {
-display: none!important;
+.footer__data {
+  text-align: left;
+  
+  display: inline-block;
+  width: 70%;
+  
+}
+
+img.email_icon {
+    display: inline-block;
+    height: 3.125rem;
+    border: 1px solid #3a5a84;
+    margin-right: 1rem;
+    
+  
+}
+
+p.email {
+    color: #fff;
+    font-family: 'IBM Plex Sans';
+    text-align: left;
+    font-size: 1rem;
+    display: inline-block;
+    line-height: 20px;
+    padding-bottom: 1.5rem;
+    text-align: left;
+
+   
+}
+
+@media screen and (max-width: 640px){
+
+.footer__data {
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding-top: 25%;
+    display: block;
+    font-size: 20px;
+}
+}
+
+@media screen and (max-width: 550px){
+
+.footer__data {
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding-top: 20px;
+    display: block;
+    font-size: 20px;
+}
+}
+
+
+
+
+/*p.copyright {
+    text-align: center;
+    padding-top: 35%;
+    display: block;
+    font-size: 20px;
+}*/
 }
